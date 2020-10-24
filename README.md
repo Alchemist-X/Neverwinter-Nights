@@ -22,13 +22,13 @@ Shuang Wu (BSc, Year 2, UID:3035639109, user name: wsjack22)
 
 ## Game Description & Basic Rules
 
-Our game is a role-playing video game, we try to make it similar to Dungeons & Dragons (DND). Players will form an adventure team towards a wild and remote zone. On their adventure, they will beat enemies, collect items, and eventually discover the hidden secret of a mysterious relics.
+Our game is a role-playing text-based game, we try to make it similar to Dungeons & Dragons (DND). Players will form an adventure team towards a wild and remote zone. On their adventure, they will beat enemies, collect items, and eventually discover the hidden secret of a mysterious relic.
 
 **1. Players**
 
 The game will require four players to join.
 
-**2. Intilization of game**
+**2. Intilization Of Game**
 
 On the beginning of game, after naming their characters, players will be given chances to decide their races, talents and attributes. Different choices would have multiple impact on the gameplay. They all have to roll a dice to determine the exact number of each property. 
 
@@ -36,7 +36,7 @@ On the beginning of game, after naming their characters, players will be given c
 
 The leading person of players' team will decide where to go. On different places, players will face different incidents and distinguishtive activities.
 
-**4. Battle system**
+**4. Battle System**
 
 Players have to beat dangerous monsters along their journey. We introduce a battle system including ATT, DEX, STA, INT (stands for attack, agility, life, intelligence). Besides,Luck involves in our battle, the number of dice a player (or the monster) will have great effect on the fighting, making it unpredictable and more challenging.
 
@@ -48,7 +48,7 @@ Players have multiple attributes. Some of them are crucial to them, like health 
 
 Players can save their progress in the cozy taverns. If they unluckily get all killed in a battle, they would be able to reload it and have a second chance.
 
-**7. How to win**
+**7. How To Win**
 
 As long as players make themselves to the deepest spot of this ancient relic, getting the legendary item -- the condemned heart of fallen Lich, beating up the final boss. They will be able to end the tragedy in this cursed area and got final victory.
 
