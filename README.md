@@ -34,44 +34,46 @@ On the beginning of game, after naming their characters, players will be given c
 
 **3. Moving and Travelling**
 
-The leading person of players' team will decide where to go. On different places, players will face differnect incidents and distinguishtive activities.
+The leading person of players' team will decide where to go. On different places, players will face different incidents and distinguishtive activities.
 
 **4. Battle system**
 
-Players have to beat dangerous creatures along their journey. We introduce a battle system including ATT, DEX, STA, INT (stands for attack, agility, life, intelligence). Besides,Luck involves in our battle, the number of dice a player (or the monster) will have great effect on the fighting, making it unpredictable and more challenging.
+Players have to beat dangerous monsters along their journey. We introduce a battle system including ATT, DEX, STA, INT (stands for attack, agility, life, intelligence). Besides,Luck involves in our battle, the number of dice a player (or the monster) will have great effect on the fighting, making it unpredictable and more challenging.
 
 **5. Player Status**
 
 Players have multiple attributes. Some of them are crucial to them, like health points (HP) or wealth (number of coins you got). For instance, your gameplay will end if the HP of character goes zero. You can't pass some shortcuts without paying a certain amount of money to the guards.
 
-**6. Save & Load
+**6. Save & Load**
 
 Players can save their progress in the cozy taverns. If they unluckily get all killed in a battle, they would be able to reload it and have a second chance.
 
-**7. How to win
+**7. How to win**
 
-As long as players make themselves to the deepest spot of this ancient relic, getting the legendary item --the condemned heart of fallen wizards, beating up the final boss. They will be able to end the tragedy in this cursed area and got final victory.
+As long as players make themselves to the deepest spot of this ancient relic, getting the legendary item -- the condemned heart of fallen Lich, beating up the final boss. They will be able to end the tragedy in this cursed area and got final victory.
 
 
 ## Libray we might use:
-cstdlib and ctime: use for make random numbers while rolling the dice
 
-iostream: standard input and output fstream: file I/O
+cstdlib and ctime: use for make random numbers while rolling the dice.
 
-string: store the data of each move and conditions
+iostream: standard input and output fstream: file I/O.
 
-cmath: use for calculation
+string: store the data of each move and conditions.
 
-vector: to store the data and do some operation
+cmath: use for calculation.
 
-map: for some operation for data
+vector: to store the data and do some operations.
 
-algorithm: to use some well-worked functions and algorithm
+map: do some operations on stored data.
 
-iomanip: manipulate the input and output
+algorithm: use some well-worked functions and algorithms.
+
+iomanip: manipulate input and output.
 
 
 ## Coming Features
+
 feature 1: we will generate random numbers to make the each boss, each payoff after winning random.
 
 feature 2: we will make a data file to store the level, the weapons, the money that a player have.
