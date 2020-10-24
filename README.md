@@ -35,7 +35,21 @@ On the intilation of game, player will be given chances to decide their races, t
 3. 
 
 ## Libray we might use:
+cstdlib and ctime: use for make random numbers while rolling the dice
 
+iostream: standard input and output fstream: file I/O
+
+string: store the data of each move and conditions
+
+cmath: use for calculation
+
+vector: to store the data and do some operation
+
+map: for some operation for data
+
+algorithm: to use some well-worked functions and algorithm
+
+iomanip: manipulate the input and output
 
 ##
 
