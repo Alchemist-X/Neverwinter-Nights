@@ -17,7 +17,7 @@ make
 
 Yishu Wang (CE, Year 2, UID:3035638272, user name: Alechemist-X)
 
-Shuang Wu
+Shuang Wu (BSc, Year 2, UID:3035639109, user name: wsjack22)
 
 
 ## Game Description 
