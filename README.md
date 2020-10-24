@@ -44,3 +44,12 @@ On the intilation of game, player will be given chances to decide their races, t
 
 
 ## Coming Features
+feature 1: we will generate random numbers to make the each boss, each payoff after winning random.
+
+feature 2: we will make a data file to store the level, the weapons, the money that a player have.
+
+feature 3: we will make it possible to enter a player's data by type in the player's username.
+
+feature 4: we will make it possible to change the game status(level,or weapons etc.) by inputting & outputting when necessary.
+
+feature 5: we will make several files, such as the boss file, weapons file, and we will make it possible to program these files as a whole.
