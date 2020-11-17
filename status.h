@@ -3,7 +3,7 @@
 struct Hero{
 	string characterName;
 	int gameLevel;
-	double correntMoney;
+	double currentMoney;
 	double healthPoint;
 	double attackPower;
 	double defensivePower;
