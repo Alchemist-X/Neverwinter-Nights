@@ -23,16 +23,16 @@ Hero raceHuman;
 raceHuman.race="Human";
 
 
-Hero raceMonster;
-raceMonster.race="Monster";
+Hero raceDwarf;
+raceMonster.race="Dwarf";
 
 
-Hero raceFairy;
-raceFairy.race="Fairy";
+Hero raceElf;
+raceFairy.race="Elf";
 
 
-Hero raceMagician;
-raceMagicion.race="Magician";
+Hero raceGoblin;
+raceMagicion.race="Goblin";
 
 
 
