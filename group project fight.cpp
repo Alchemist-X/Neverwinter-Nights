@@ -1,40 +1,57 @@
 #include <iostream>
 #include <cmath>
 #include <fstream>
+#include "game_data.h"
 #include "status.h"
 #include <string>
 #include <sstream>
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
 
 //in this cpp file, we will build the fight scene. 
 
 
-// first of all, these are the basic data for the character
-string characterName;
-int gameLevel;
-double correntMoney;
-double healthPoint;
-double attackPower;
-double defensivePower;
-double agility;
-string equipment_1;
-string equipment_2;
-string equipment_3;
-string potion_1;
-string potion_2;
-string potion_3;
-string skill_1;
-string skill_2;
-string race;
-
-
-// we have designed five equipments for the players to select
-
- 
-
 
 int main(){
+	// first of all, we want to welcome the players and explain this game. 
+	cout << "Welcome to this game of adventure!" <<endl;
+
+
+
+
+	// the player can choose the race for the hero.
+	cout << "Please choose the race for your hero." << endl;
+	string inputRace;
+	cin >> inputRace;
+	if (inputRace=="Human")
+	{
+		raceHuman.race="Human";
+	}
+	if (inputRace=="Monster")
+	{
+		raceMonster.race="Monster";
+	}
+	if (inputRace=="Fairy")
+	{
+		raceFairy.race="Fairy";
+	}
+	if (inputRace=="Magician")
+	{
+		raceMagician.race="Magician";
+	}
+
+
+	// the player can name for the hero.
+	cout << "Please pick a adorable name for your hero." << endl;
+	string inputName;
+	cin >> inputName;
+	
+
+
+
+
 	ifstream fin;
 	fin.open("character_status.txt");
 	// in all *status.txt, all the data have the following format：
@@ -94,6 +111,8 @@ int main(){
 	race=l16;
 	// we read the data from the file of character's status
 	fin.close();
+
+
 
 	
 
