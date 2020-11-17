@@ -1,82 +1,38 @@
-// we designed a few bosses.
+// first of all, these are the basic data for the character
 
-struct Boss
-{
-	string bossName;
-	double bossValue;
-	double bossHealthPoint;
-	double bossAttackPower;
-	double bossDefensivePower;
-	double bossAgility;
-	
+struct Hero{
+	string characterName;
+	int gameLevel;
+	double correntMoney;
+	double healthPoint;
+	double attackPower;
+	double defensivePower;
+	double agility;
+	string equipment_1;
+	string equipment_2;
+	string equipment_3;
+	string potion_1;
+	string potion_2;
+	string potion_3;
+	string skill_1;
+	string skill_2;
+	string race;
 };
 
-// boss one, the Riddler
+Hero raceHuman;
+raceHuman.race="Human";
 
 
-Boss Riddler;
-Riddler.bossName()="Riddler";
-Riddler.bossValue()=100;
-Riddler.bossHealthPoint()=100;
-Riddler.bossAttackPower()=30;
-Riddler.bossDefensivePower()=20;
-Riddler.bossAgility()=10;
+Hero raceMonster;
+raceMonster.race="Monster";
 
 
-// boss two, the Joker
+Hero raceFairy;
+raceFairy.race="Fairy";
 
 
-Boss Joker;
-Joker.bossName()="Joker";
-Joker.bossValue()=200;
-Joker.bossHealthPoint()=150;
-Joker.bossAttackPower()=60;
-Joker.bossDefensivePower()=30;
-Joker.bossAgility()=40;
-
-
-// boss three, the Thanos
-
-
-Boss Thanos;
-Thanos.bossName()="Thanos";
-Thanos.bossValue()=500;
-Thanos.bossHealthPoint()=300;
-Thanos.bossAttackPower()=100;
-Thanos.bossDefensivePower()=80;
-Thanos.bossAgility()=70;
-
-
-// we designed a few equipments
-
-
-struct Equipment
-{
-	string equipmentName;
-	void equipmentPower(equipmentName);
-};
-
-
-
-// we designed a few potions
-
-
-struct 
-{
-	string potionName;
-	void potionPower(potionName);
-};
-
-
-// we designed a few skills
-
-
-struct
-{
-	string skillName;
-	void skillPowert(skillName);
-};
-
+Hero raceMagician;
+raceMagicion.race="Magician";
 
 
 
