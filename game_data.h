@@ -82,33 +82,34 @@ tank.equipmentValue=250;
 
 void equipmentPower(string equipmentName)
 {
-	switch (equipmentName)
+	char second_character;
+	switch (second_character)
 	{
-		case "Knife":
+		case 'n':
 		attackPower+=30;
 		defensivePower+=10;
 		currentMoney=currentMoney-knife.equipmentValue;
 		break;
 
-		case "Sword":
+		case 'w':
 		attackPower+=40;
 		defensivePower+=10;
 		currentMoney=currentMoney-sword.equipmentValue;
 		break;
 
-		case "Shield":
+		case 'h':
 		attackPower+=10;
 		defensivePower+=30;
 		currentMoney=currentMoney-shield.equipmentValue;
 		break;
 
-		case "Armour":
+		case 'r':
 		attackPower+=20;
 		defensivePower+=50;
 		currentMoney=currentMoney-armour.equipmentValue;
 		break;
 
-		case "Tank":
+		case 'a':
 		attackPower+=90;
 		defensivePower+=70;
 		currentMoney=currentMoney-tank.equipmentValue;
@@ -148,26 +149,28 @@ randomenhance.potionValue=30;
 
 void potionPower(string potionName)
 {
-	switch(potionName)
+	char first_character;
+	switch(first_character)
 	{
-		case "Boold":
+		case 'B':
 		healthpoint+=20;
 		currentMoney=currentMoney-boold.equipmentValue;
 		break;
 
-		case "Strength":
+		case 'S':
 		attackPower+=20;
 		currentMoney=currentMoney-strength.equipmentValue;
 		break;
 
-		case "Hardness":
+		case 'H':
 		defensivePower+=20;
 		currentMoney=currentMoney-hardness.equipmentValue;
 		break;
 
 
-		case "RandomEnhance":
+		case 'R':
 		srand(time(NULL));
+		int potionRandomNumber;
 		potionRandomNumber=rand()%3+1;
 		if (potionRandomNumber==1){
 			healthpoint+=20;
@@ -210,6 +213,7 @@ reverse.skillName="Reverse";
 void skillPower()
 {
 	srand(time(NULL));
+	int skillRandomNumber;
 	skillRandomNumber=rand()%4+1;
 	switch (skillRandomNumber)
 	{
