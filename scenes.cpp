@@ -156,6 +156,13 @@ Void enterBar()
             "…… \n"
             "It's late now \n"
             "Let's continue the story of Siegfiled in another day" << endl;
+            
+            cout << "So, what's your next step? \n" ;
+            cout << "Enter 1 to have a cup of beer (cost 3 golds) \n"
+            cout << "Enter 2 to chat with the shopkeeper \n"
+            cout << "Enter 3 to listen to the travelling poet \n"
+            cout << "Enter N to leave the Bar" << endl;
+            switch(player_decision)
         case 'N':
             cout << "you slam the door and leave the Bar" << endl;
         default:
