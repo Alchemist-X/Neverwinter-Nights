@@ -24,15 +24,15 @@ raceHuman.race="Human";
 
 
 Hero raceDwarf;
-raceMonster.race="Dwarf";
+raceDwarf.race="Dwarf";
 
 
 Hero raceElf;
-raceFairy.race="Elf";
+raceElf.race="Elf";
 
 
 Hero raceGoblin;
-raceMagicion.race="Goblin";
+raceGoblin.race="Golbin";
 
 
 
