@@ -22,7 +22,7 @@ Shuang Wu (BSc, Year 2, UID:3035639109, user name: wsjack22)
 
 ## Game Description & Basic Rules
 
-Our game is a role-playing text-based game, we try to make it similar to Dungeons & Dragons (DND). Players will form an adventure team towards a wild and remote zone. On their adventure, they will beat enemies, collect items, and eventually discover the hidden secret of a mysterious relic.
+Our game is a role-playing text-based game, we try to make it similar to Dungeons & Dragons (DND). Players will explore a wild and remote zone. On their adventure, they will beat enemies, collect items, and eventually discover the hidden secret of a mysterious relic.
 
 **1. Players**
 
