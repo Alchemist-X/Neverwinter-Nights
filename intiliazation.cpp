@@ -6,7 +6,7 @@
 #include <string>
 using namespace std;
 
-string intialize()
+void intialize()
 {   
     string inputNickname,race;
     char decision;
@@ -41,12 +41,22 @@ string intialize()
     {
         case 'H':
             race = "Human";
+            ATK += 5;
+            DEF += 5;
         case 'D':
             race = "Dwarf";
+            ATK += 5;
+            HP += 20;
         case 'E':
             race = "Elf";
+            ATK += 15;
+            AGI += 20;
+            DEF -= 5;
+            HP += 30;
         case 'G':
             race = "Goblin";
+            DEF += 5;
+            HP += 20;
     } 
 
     ofstream fout;
@@ -76,5 +86,4 @@ string intialize()
 
     fout.close();
     
-    return inputNickname;
 }
