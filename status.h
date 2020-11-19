@@ -1,7 +1,7 @@
-// first of all, the following struct define the information about our character
+// first of all, these are the basic data for character
 
 struct Hero{
-	string characterName;
+	string chracterName;
 	int gameLevel;
 	int currentMoney;
 	int healthPoint;
@@ -15,14 +15,7 @@ struct Hero{
 	string potion_1;
 	string potion_2;
 	string potion_3;
-	string skill;
-	string talent;
+	string skill_1;
+	string skill_2;
 };
-
-
-
-
-
-
-
 
