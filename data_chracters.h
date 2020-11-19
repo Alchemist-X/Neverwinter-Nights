@@ -1,85 +1,75 @@
-// we designed a few bosses.
+// we designed a few enemies.
 
-struct Boss
+struct Enemy
 {
-	string bossName;
-	double gold;
-	double bossHealthPoint;
-	double bossAttackPower;
-	double bossDefensivePower;
-	double bossAgility;
+	string enemyName;
+	int gold;
+	int enemyHealthPoint;
+	int enemyAttackPower;
+	int enemyDefensivePower;
+	int enemyAgility;
 	
 };
 
-// boss one, the Riddler
+// enemy one, the Riddler
 
 
-Boss Riddler;
-Riddler.bossName="Riddler";
+Enemy Riddler;
+Riddler.enemyName="Riddler";
 Riddler.gold=100;
-Riddler.bossHealthPoint=100;
-Riddler.bossAttackPower=30;
-Riddler.bossDefensivePower=20;
-Riddler.bossAgility=10;
+Riddler.enemyHealthPoint=100;
+Riddler.enemyAttackPower=30;
+Riddler.enemyDefensivePower=20;
+Riddler.enemyAgility=10;
 
 
-// boss two, the Joker
+// enemy two, the Joker
 
 
-Boss Joker;
-Joker.bossName="Joker";
+Enemy Joker;
+Joker.enemyName="Joker";
 Joker.gold=200;
-Joker.bossHealthPoint=150;
-Joker.bossAttackPower=60;
-Joker.bossDefensivePower=30;
-Joker.bossAgility=40;
+Joker.enemyHealthPoint=150;
+Joker.enemyAttackPower=60;
+Joker.enemyDefensivePower=30;
+Joker.enemyAgility=40;
 
 
-// boss three, the Thanos
+// enemy three, the Thanos
 
 
-Boss Thanos;
-Thanos.bossName="Thanos";
+Enemy Thanos;
+Thanos.enemyName="Thanos";
 Thanos.gold=500;
-Thanos.bossHealthPoint=300;
-Thanos.bossAttackPower=100;
-Thanos.bossDefensivePower=80;
-Thanos.bossAgility=70;
+Thanos.enemyHealthPoint=300;
+Thanos.enemyAttackPower=100;
+Thanos.enemyDefensivePower=80;
+Thanos.enemyAgility=70;
 
-// Monsters' design is similar to Boss's
-struct Monster
-{
-	string monsterName;
-	double gold;
-	double monsterHealthPoint;
-	double monsterAttackPower;
-	double monsterDefensivePower;
-	double monsterAgility;
-}
-
-Monster Orc;
-Orc.monsterName="Orc";
+// there are three little enemies we can percieve them as Monsters.
+Enemy Orc;
+Orc.enemyName="Orc";
 Orc.gold=20;
-Orc.monsterHealthPoint=30;
-Orc.monsterAttackPower=20;
-Orc.monsterDefensivePower=5;
-Orc.monsterAgility=10;
+Orc.enemyHealthPoint=30;
+Orc.enemyAttackPower=20;
+Orc.enemyDefensivePower=5;
+Orc.enemyAgility=10;
 
-Monster Slime;
-Slime.monsterName="Slime";
+Enemy Slime;
+Slime.enemyName="Slime";
 Slime.gold=5;
-Slime.monsterHealthPoint=90;
-Slime.monsterAttackPower=5;
-Slime.monsterDefensivePower=15;
-Slime.monsterAgility=5;
+Slime.enemyHealthPoint=90;
+Slime.enemyAttackPower=5;
+Slime.enemyDefensivePower=15;
+Slime.enemyAgility=5;
 
-Monster FallenElf;
-FallenElf.monsterName="FallenElf";
+Enemy FallenElf;
+FallenElf.enemyName="FallenElf";
 FallenElf.gold=200;
-FallenElf.monsterHealthPoint=45;
-FallenElf.monsterAttackPower=20;
-FallenElf.monsterDefensivePower=1;
-FallenElf.monsterAgility=70;
+FallenElf.enemyHealthPoint=45;
+FallenElf.enemyAttackPower=20;
+FallenElf.enemyDefensivePower=1;
+FallenElf.enemyAgility=70;
 
 // we designed a few skills
 
@@ -110,29 +100,29 @@ void skillPower()
 	switch (skillRandomNumber)
 	{
 		case 1:
-		bossHealthPoint-=100;
+		enemyHealthPoint-=100;
 		break;
 
 		case 2:
-		bossDefensivePower=0;
+		enemyDefensivePower=0;
 		break;
 
 		case 3:
-		healthpoint+=(bossAttackPower - defensivePower);
+		healthpoint+=(enemyAttackPower - defensivePower);
 		break;
 
 		case 4:
-		double tempHealth=healthpoint;
-		double tempAttack=attackPower;
-		double tempDefense=defensivePower;
+		int tempHealth=healthpoint;
+		int tempAttack=attackPower;
+		int tempDefense=defensivePower;
 
-		healthpoint=bossHealthPoint;
-		attackPower=bossAttackPower;
-		defensivePower=bossDefensivePower;
+		healthpoint=enemyHealthPoint;
+		attackPower=enemyAttackPower;
+		defensivePower=enemyDefensivePower;
 
-		bossHealthPoint=tempHealth;
-		bossAttackPower=tempAttack;
-		bossDefensivePower=tempDefense;
+		enemyHealthPoint=tempHealth;
+		enemyAttackPower=tempAttack;
+		enemyDefensivePower=tempDefense;
 		break;
 
 	}
