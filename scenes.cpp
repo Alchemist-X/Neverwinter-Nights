@@ -81,14 +81,14 @@ void enterChurch()
     "Enter N to leave" << endl;
     cin >> player_decision;
 
-    switch(player_decison)
+    switch(player_decision)
     {
         case '1':
             cout << "What kind of property would you like to enhace?\n"
             "ATK+5 (20 Golds) \n"
             "DEF+5 (30 Golds) \n"
             "AGI+5 (60 Golds)" << endl;
-            cin >> player_decison;
+            cin >> player_decision;
             // todo
         case '2':
             cout << "What kind of skill would you like to learn?\n"
@@ -111,7 +111,7 @@ void enterChurch()
 
 
 // this function shows what player will come across in the Bar.
-Void enterBar()
+void enterBar()
 {   
     char player_decision;
     string current_mission;
@@ -130,20 +130,20 @@ Void enterBar()
     switch(player_decision)
     {
         case '1':
-            cout << "It tastes nice, you murmur in a low voice \n"
+            cout << "It tastes nice, you murmur in a low voice " << endl;
             // todo
             beer_count++;
             cout << "I got more important thing to do, rather than getting drunk here \n"
 
-            cout << "So, what's your next step? \n" ;
-            cout << "Enter 1 to have a cup of beer (cost 3 golds) \n"
-            cout << "Enter 2 to chat with the shopkeeper \n"
-            cout << "Enter 3 to listen to the travelling poet \n"
-            cout << "Enter N to leave the Bar" << endl;
+            "So, what's your next step? \n"
+            "Enter 1 to have a cup of beer (cost 3 golds) \n"
+            "Enter 2 to chat with the shopkeeper \n"
+            "Enter 3 to listen to the travelling poet \n"
+            "Enter N to leave the Bar" << endl;
             switch(player_decision)
         case '2':
             cout << "you make your way through the exciting crowds, begin chatting with the shopkeeper \n"
-            cout << "It's a new face here, would you like to take some missions?"
+            "It's a new face here, would you like to take some missions?" << endl;
             //todo
         case '3':
             cout << "Now he was of the strength that he bare weapons well \n"
@@ -157,7 +157,7 @@ Void enterBar()
             "It's late now \n"
             "Let's continue the story of Siegfiled in another day" << endl;
 
-            cout << "So, what's your next step? \n" ;
+            cout << "So, what's your next step? \n" 
             "Enter 1 to have a cup of beer (cost 3 golds) \n"
             "Enter 2 to chat with the shopkeeper \n"
             "Enter 3 to listen to the travelling poet \n"
