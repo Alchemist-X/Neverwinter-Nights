@@ -94,9 +94,14 @@ randomenhance.potionValue=30;
 
 void potionPower(string potionName)
 {
+
 	char first_character;
 	switch(first_character)
 	{
+		case 'E':
+		// there is no potion in the package, and the potion name is therefore Empty
+		break;
+
 		case 'B':
 		healthpoint+=20;
 		currentMoney=currentMoney-boold.equipmentValue;
@@ -129,5 +134,12 @@ void potionPower(string potionName)
 			defensivePower+=20;
 			currentMoney=currentMoney-hardness.equipmentValue;
 		}
+		break;
+
+		default:
+		cout << "Ivalid input, please enter again." << endl;
+		cin >> potionName;
+		potionPower(potionName);
+
 	}
 }
