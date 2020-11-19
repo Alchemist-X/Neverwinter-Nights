@@ -1,4 +1,4 @@
-// first of all, these are the basic data for the character
+// first of all, the following struct define the information about our character
 
 struct Hero{
 	string characterName;
@@ -15,24 +15,10 @@ struct Hero{
 	string potion_1;
 	string potion_2;
 	string potion_3;
-	string skill_1;
-	string skill_2;
+	string skill;
+	string talent;
 };
 
-Hero raceHuman;
-raceHuman.race="Human";
-
-
-Hero raceDwarf;
-raceDwarf.race="Dwarf";
-
-
-Hero raceElf;
-raceElf.race="Elf";
-
-
-Hero raceGoblin;
-raceGoblin.race="Golbin";
 
 
 
