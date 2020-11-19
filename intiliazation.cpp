@@ -13,7 +13,7 @@ void intialize()
     int totalPoints,healthPoint,attackPower,defensivePower,agility;
 
     totalPoints = 30;
-    healthPoint = 50;
+    healthPoint = 100;
     attackPower = 30;
     defensivePower = 25;
     agility = 20;
