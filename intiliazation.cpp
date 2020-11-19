@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-#include "data_characters.h"
+#include "data_chracters.h"
 #include "status.h"
 #include <string>
 using namespace std;
@@ -12,7 +12,7 @@ string intialize()
     char decision;
     int totalPoints,HP,ATK,DEF,AGI;
 
-    total_points = 30;
+    totalPoints = 30;
     HP = 50;
     ATK = 30;
     DEF = 25;
@@ -25,7 +25,7 @@ string intialize()
     "Please decide the name for your character, press Enter to finish~" << endl;
 
     cin >> inputNickname;
-    cout << "Cool! " << input_nickname << ", A name of Warrior" << endl;
+    cout << "Cool! " << inputNickname << ", A name of Warrior" << endl;
     cout << "Now, it's time to distribute points through ATK,DEF,AGI and HP. \n" 
     "** Hint: ATK,DEF,AGI and HP stands for attack,defence,agility and health points ins equence. **"
     "You will be give 30 points in total"
@@ -37,7 +37,7 @@ string intialize()
     "Enter E for Elf \n"
     "Enter G for Goblin" << endl;
     cin >> decision;
-    switch(race)
+    switch(decision)
     {
         case 'H':
             race = "Human";
@@ -45,8 +45,8 @@ string intialize()
             race = "Dwarf";
         case 'E':
             race = "Elf";
-        case "G":
-            race = Goblin;
+        case 'G':
+            race = "Goblin";
     } 
 
     ofstream fout;
@@ -74,7 +74,7 @@ string intialize()
     fout << "Empty" << endl;
     fout << "Empty" << endl;
 
-    fout.close()
+    fout.close();
     
-
+    return inputNickname;
 }
