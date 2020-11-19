@@ -10,13 +10,13 @@ void intialize()
 {   
     string inputNickname,race;
     char decision;
-    int totalPoints,HP,ATK,DEF,AGI;
+    int totalPoints,healthPoint,attackPower,defensivePower,agility;
 
     totalPoints = 30;
-    HP = 50;
-    ATK = 30;
-    DEF = 25;
-    AGI = 20;
+    healthPoint = 50;
+    attackPower = 30;
+    defensivePower = 25;
+    agility = 20;
 
     cout << "Welcome to the world of Neverwinter Nights! Brave Adventurer! \n"
     "In the game, you will be able to discover the hidden secret of a mysterious relic. \n"
@@ -26,8 +26,8 @@ void intialize()
 
     cin >> inputNickname;
     cout << "Cool! " << inputNickname << ", A name of Warrior" << endl;
-    cout << "Now, it's time to distribute points through ATK,DEF,AGI and HP. \n" 
-    "** Hint: ATK,DEF,AGI and HP stands for attack,defence,agility and health points ins equence. **"
+    cout << "Now, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. \n" 
+    "** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agilitylity and health points ins equence. **"
     "You will be give 30 points in total"
     "Please enter the properties that you want to distribute" << endl;
     // todo
@@ -41,22 +41,22 @@ void intialize()
     {
         case 'H':
             race = "Human";
-            ATK += 5;
-            DEF += 5;
+            attackPower += 5;
+            defensivePower += 5;
         case 'D':
             race = "Dwarf";
-            ATK += 5;
-            HP += 20;
+            attackPower += 5;
+            healthPoint += 20;
         case 'E':
             race = "Elf";
-            ATK += 15;
-            AGI += 20;
-            DEF -= 5;
-            HP += 30;
+            attackPower += 15;
+            agility += 20;
+            defensivePower -= 5;
+            healthPoint += 30;
         case 'G':
             race = "Goblin";
-            DEF += 5;
-            HP += 20;
+            defensivePower += 5;
+            healthPoint += 20;
     } 
 
     ofstream fout;
@@ -70,10 +70,10 @@ void intialize()
     fout << inputNickname << endl;
     fout << 1 << endl;
     fout << 100 << endl;
-    fout << HP << endl;
-    fout << ATK << endl;
-    fout << DEF << endl;
-    fout << AGI << endl;
+    fout << healthPoint << endl;
+    fout << attackPower << endl;
+    fout << defensivePower << endl;
+    fout << agility << endl;
     fout << race << endl;
     fout << "Empty" << endl;
     fout << "Empty" << endl;
