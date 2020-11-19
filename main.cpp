@@ -6,6 +6,7 @@
 #include "status.h"
 #include "intiliazation.cpp"
 #include "battle.h"
+#include "scenes.h"
 #include "assistant_function.h"
 #include <string>
 #include <sstream>
@@ -83,6 +84,30 @@ int main()
 	talent=l16;
 	// we read the data from the file of character's status
 	fin.close();
+	
+	char toGo;
+	cout << "Hi, " << characterName << endl;
+	cout << "where do you want to go? \n"
+	"Enter I to go to Inn \n"
+	"Enter S to go to Smithy \n"
+	"Enter C to go to Church \n"
+	"Enter B to go to Bar \n"
+	"Enter W to go to wild and fight with enemy" << endl;
+	cin >> toGo;
+	
+	switch(toGo)
+	{
+		case 'I':
+			enterInn();
+		case 'S':
+			enterSmithy();
+		case 'C':
+			enterChurch();
+		case 'B':
+			enterBar();
+		case 'W':
+		
+	}
 
 	
 
