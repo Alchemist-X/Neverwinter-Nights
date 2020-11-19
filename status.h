@@ -1,7 +1,7 @@
 // first of all, these are the basic data for character
 
 struct Hero{
-	string chracterName;
+	string characterName;
 	int gameLevel;
 	int currentMoney;
 	int healthPoint;
