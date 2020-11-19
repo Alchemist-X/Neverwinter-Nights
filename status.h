@@ -2,12 +2,13 @@
 
 struct Hero{
 	string characterName;
-	int stageLevel;
-	double currentMoney;
-	double healthPoint;
-	double attackPower;
-	double defensivePower;
-	double agility;
+	int gameLevel;
+	int currentMoney;
+	int healthPoint;
+	int attackPower;
+	int defensivePower;
+	int agility;
+	string race;
 	string equipment_1;
 	string equipment_2;
 	string equipment_3;
@@ -16,7 +17,6 @@ struct Hero{
 	string potion_3;
 	string skill_1;
 	string skill_2;
-	string race;
 };
 
 Hero raceHuman;
