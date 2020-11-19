@@ -2,7 +2,7 @@
 #include <cmath>
 #include <fstream>
 #include "data_items.h"
-#include "data_chracters.h"
+#include "data_characters.h"
 #include "status.h"
 #include "intiliazation.cpp"
 #include <string>
