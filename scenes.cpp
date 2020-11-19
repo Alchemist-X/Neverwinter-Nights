@@ -16,9 +16,9 @@ void enterInn()
     int max_HP;
     int current_golds;
 
-    cout << "Welcome to the Inn, would you like to have a rest?\n" 
-    "With only 20 golds, you could enjoy the cozy bed and warm drink" << endl;
-    cout << "Enter Y to stay, N to leave the Inn" << endl;
+    cout << "Welcome to the Inn, would you like to have a rest? \n" 
+    "With only 20 golds, you could enjoy the cozy bed and warm drink \n" 
+    "Enter Y to stay, N to leave the Inn" << endl;
     cin >> player_decision;
 
 
@@ -77,27 +77,27 @@ void enterChurch()
 
     cout << "Welcome! I am priest Martin, what can i do for you?" << endl;
     cout << "Enter 1 to see property promotion\n"
-    cout << "Enter 2 to see provided skills\n"
-    cout << "Enter N to leave" << endl;
+    "Enter 2 to see provided skills\n"
+    "Enter N to leave" << endl;
     cin >> player_decision;
 
     switch(player_decison)
     {
         case '1':
             cout << "What kind of property would you like to enhace?\n"
-            cout << "ATK+5 (20 Golds) \n"
-            cout << "DEF+5 (30 Golds) \n"
-            cout << "AGI+5 (60 Golds) \n"
+            "ATK+5 (20 Golds) \n"
+            "DEF+5 (30 Golds) \n"
+            "AGI+5 (60 Golds)" << endl;
             cin >> player_decison;
             // todo
         case '2':
             cout << "What kind of skill would you like to learn?\n"
-            cout << "Fighting Style (15 Golds) \n" 
-            cout << "** skilful fighting allow you to increase ATK by 5 points ** \n"
-            cout << "Extra Attack (60 Golds) \n"
-            cout << " ** the warrior instinct enable you to hit enemy twice in the first round ** \n"
-            cout << "Indomitable (100 Golds) \n"
-            cout << " ** unyielding heart burst out fuel when player is dying, this allows you to restore HP to 1** "
+            "Fighting Style (15 Golds) \n" 
+            "** skilful fighting allow you to increase ATK by 5 points ** \n"
+            "Extra Attack (60 Golds) \n"
+            " ** the warrior instinct enable you to hit enemy twice in the first round ** \n"
+            "Indomitable (100 Golds) \n"
+            " ** unyielding heart burst out fuel when player is dying, this allows you to restore HP to 1** " << endl;
             cin >> player_decision;
             // todo
         case 'N':
@@ -121,10 +121,10 @@ Void enterBar()
     beer_count = 0;
 
     cout << "You enter the noisy and crowded bar, what would you like to do? \n"
-    cout << "Enter 1 to have a cup of beer (cost 3 golds) \n"
-    cout << "Enter 2 to chat with the owner \n"
-    cout << "Enter 3 to listen to the travelling poet \n"
-    cout << "Enter N to leave the Bar" << endl;
+    "Enter 1 to have a cup of beer (cost 3 golds) \n"
+    "Enter 2 to chat with the owner \n"
+    "Enter 3 to listen to the travelling poet \n"
+    "Enter N to leave the Bar" << endl;
     cin >> player_decision;
 
     switch(player_decision)
@@ -156,12 +156,12 @@ Void enterBar()
             "…… \n"
             "It's late now \n"
             "Let's continue the story of Siegfiled in another day" << endl;
-            
+
             cout << "So, what's your next step? \n" ;
-            cout << "Enter 1 to have a cup of beer (cost 3 golds) \n"
-            cout << "Enter 2 to chat with the shopkeeper \n"
-            cout << "Enter 3 to listen to the travelling poet \n"
-            cout << "Enter N to leave the Bar" << endl;
+            "Enter 1 to have a cup of beer (cost 3 golds) \n"
+            "Enter 2 to chat with the shopkeeper \n"
+            "Enter 3 to listen to the travelling poet \n"
+            "Enter N to leave the Bar" << endl;
             switch(player_decision)
         case 'N':
             cout << "you slam the door and leave the Bar" << endl;
@@ -171,3 +171,4 @@ Void enterBar()
             switch (player_decision);
     }
 }
+
