@@ -100,18 +100,22 @@ void skillPower()
 	switch (skillRandomNumber)
 	{
 		case 1:
+		cout << "You are using the Crit skill now." << endl;
 		enemyHealthPoint-=100;
 		break;
 
 		case 2:
+		cout << "You are using the Undefense skill now." << endl;
 		enemyDefensivePower=0;
 		break;
 
 		case 3:
+		cout << "You are using the Miss skill now." << endl;
 		healthpoint+=(enemyAttackPower - defensivePower);
 		break;
 
 		case 4:
+		cout << "You are using the Reverse skill now." << endl;
 		int tempHealth=healthpoint;
 		int tempAttack=attackPower;
 		int tempDefense=defensivePower;
