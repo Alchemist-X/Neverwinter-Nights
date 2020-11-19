@@ -1,17 +1,17 @@
 #include <iostream>
 #include <cmath>
 #include <fstream>
-#include "data_items.h"
-#include "data_chracters.h"
-#include "status.h"
-#include "intiliazation.cpp"
-#include "battle.h"
-#include "scenes.h"
-#include "assistant_function.h"
 #include <string>
 #include <sstream>
 #include <ctime>
 #include <cstdlib>
+#include "data_items.h"
+#include "data_chracters.h"
+#include "status.h"
+#include "intiliazation.cpp"
+#include "wild.h"
+#include "scenes.h"
+#include "assistant_function.h"
 using namespace std;
 
 
@@ -85,6 +85,7 @@ int main()
 	// we read the data from the file of character's status
 	fin.close();
 	
+	while()
 	char toGo;
 	cout << "Hi, " << characterName << endl;
 	cout << "where do you want to go? \n"
@@ -106,6 +107,7 @@ int main()
 		case 'B':
 			enterBar();
 		case 'W':
+			enterWild();
 		
 	}
 
