@@ -4,6 +4,7 @@
 #include "data_items.h"
 #include "data_chracters.h"
 #include "status.h"
+#include "intiliazation.cpp"
 #include <string>
 #include <sstream>
 #include <ctime>
@@ -91,7 +92,6 @@ void choiceInRound(int choiceOfTheRound)
 		cout << "Invalid input! Please try again." << endl;
 		cin >> choiceOfTheRound;
 		choiceInRound(choiceOfTheRound);
-		break;
 
 	}
 }
@@ -100,42 +100,6 @@ void choiceInRound(int choiceOfTheRound)
 
 int main()
 {
-	// first of all, we want to welcome the players and explain this game. 
-	cout << "Welcome to this game of adventure!" <<endl;
-
-
-
-
-	// the player can choose the race for the hero.
-	cout << "Please choose the race for your hero." << endl;
-	string inputRace;
-	cin >> inputRace;
-	if (inputRace=="Human")
-	{
-		raceHuman.race="Human";
-	}
-	if (inputRace=="Monster")
-	{
-		raceMonster.race="Monster";
-	}
-	if (inputRace=="Fairy")
-	{
-		raceFairy.race="Fairy";
-	}
-	if (inputRace=="Magician")
-	{
-		raceMagician.race="Magician";
-	}
-
-
-	// the player can name for the hero.
-	cout << "Please pick a adorable name for your hero." << endl;
-	string inputName;
-	cin >> inputName;
-	
-
-
-
 
 	ifstream fin;
 	fin.open("save.txt");
@@ -147,15 +111,17 @@ int main()
 	// the character's attack power:
 	// the character's defensive power:
 	// the character's agility:
+	// the character's race
 	// the character's equipment_1:
 	// the character's equipment_2:
 	// the character's equipment_3:
 	// the character's potion_1:
 	// the character's potion_2:
 	// the character's potion_3:
-	// the character's skill_1:
-	// the character's skill_2:
-	// the character's race
+	// the character's skill:
+	// the character's talent:
+	string l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15,l16;
+
 	getline(fin,l1);
 	characterName=l1;
 	getline(fin,l2);
@@ -177,31 +143,32 @@ int main()
 	istringstream is(l7);
 	is >> agility;
 	getline(fin,l8);
-	equipment_1=l8;
+	race=l8;
 	getline(fin,l9);
-	equipment_2=l9;
+	equipment_1=l9;
 	getline(fin,l10);
-	equipment_3=l10;
+	equipment_1=l10;
 	getline(fin,l11);
-	potion_1=l11;
+	equipment_3=l11;
 	getline(fin,l12);
-	potion_2=l12;
+	potion_1=l12;
 	getline(fin,l13);
-	potion_3=l13;
+	potion_2=l13;
 	getline(fin,l14);
-	skill_1=l14;
+	potion_3=l14;
 	getline(fin,l15);
-	skill_2=l15;
+	skill=l15;
 	getline(fin,l16);
-	race=l16;
+	talent=l16;
 	// we read the data from the file of character's status
 	fin.close();
 
 	// we will build the fight scene here
 	
+	
 	bool flag =1;
 	int round=1;
-	
+
 	//cout << "Please choose a Monster or a Boss to fight." << endl;
 	//cout << "Please tpye a number to choose." << endl;
 	//cout << "Enter 1 to battle with Monster Orc." << endl;
@@ -234,6 +201,7 @@ int main()
 	}
 
 
+	
 	// we will begin the fight with a while function.
 	while(flag)
 	{
