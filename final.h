@@ -1,6 +1,4 @@
-# include <string>
-# include <iostream>
-using namespace std;
+// This is the final chapter of the game
 
 bool final()
 {
