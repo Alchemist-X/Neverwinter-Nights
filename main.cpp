@@ -142,7 +142,7 @@ int main()
 					"Enter C to go to Church \n"
 					"Enter B to go to Bar \n"
 					"Enter W to go to wild and fight with enemy \n"
-					"Enter Q ro save and return to menu"
+					"Enter Q to save and return to menu"
 				 << endl;
 			cin >> toGo;
 

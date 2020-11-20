@@ -9,19 +9,19 @@
 //In this file, we decribe the functions 
 
 knife.equipmentName="Knife";
-knife.equipmentValue=70;
+knife.equipmentValue=100;
 
 
 sword.equipmentName="Sword";
-sword.equipmentValue=90;
+sword.equipmentValue=120;
 
 
 shield.equipmentName="Shield";
-shield.equipmentValue=80;
+shield.equipmentValue=130;
 
 
 armour.equipmentName="Armour";
-armour.equipmentValue=100;
+armour.equipmentValue=150;
 
 
 tank.equipmentName="Tank";
