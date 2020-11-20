@@ -10,6 +10,7 @@
 #include "initialization.h"
 #include "wild.h"
 #include "scenes.h"
+#include "save.h"
 #include "assistant_function.h"
 using namespace std;
 
