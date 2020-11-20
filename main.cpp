@@ -88,7 +88,7 @@ int main()
 			
 
 			string l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16;
-			string heroName,race,equipment_1,equipment_2,equipment_3,potion_1,potion_2,potion_3;
+			string heroName,race,equipment_1,equipment_2,equipment_3,potion_1,potion_2,potion_3,talent;
 			int gameLevel,gold,healthPoint,attackPower,defensivePower,agility,max_HP;
 
 			getline(fin, l1);
