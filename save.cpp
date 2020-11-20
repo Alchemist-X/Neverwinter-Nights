@@ -1,5 +1,7 @@
-#ifndef SAVE_H
-#define SAVE_H
+#include <iostream>
+#include "save.h"
+#include <fstream>
+using namespace std;
 
 void Save()
 {
@@ -10,7 +12,7 @@ void Save()
 		exit(1);
 	}
 
-	fout << inputNickname << endl;
+	fout << heroName << endl;
 	fout << gameLevel << endl;
 	fout << gold << endl;
 	fout << healthPoint << endl;
@@ -30,4 +32,3 @@ void Save()
 	fout.close();
 }
 
-#endif
