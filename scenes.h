@@ -18,6 +18,7 @@ void enterInn()
             cout << "you have a good sleep in a comfortable room, you feel energetic again" << endl;
             // when the hero enter the Inn, the hero's healthPoint will recover.
             healthPoint = 100;
+            // HP could be different from 100
             gold -= 20;
             break;
 
@@ -28,7 +29,7 @@ void enterInn()
         default:
             cout << "invalid input, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterInn();
     }
 }
 
@@ -55,7 +56,7 @@ void enterShop()
         default:
             cout << "invalid input, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterShop();
     }
 }
 
@@ -96,7 +97,7 @@ void enterChurch()
         default:
             cout << "invalid move, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterChurch();
     }
 }
 
@@ -159,7 +160,7 @@ void enterBar()
         default:
             cout << "invalid move, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterBar();
     }
 }
 
