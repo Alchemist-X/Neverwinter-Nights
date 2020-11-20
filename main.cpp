@@ -7,8 +7,7 @@
 #include <cstdlib>
 #include "data_items.h"
 #include "data_chracters.h"
-#include "status.h"
-#include "intiliazation.cpp"
+#include "initialization.h"
 #include "wild.h"
 #include "scenes.h"
 #include "assistant_function.h"
@@ -44,7 +43,7 @@ int main()
 		{
 			case '1':
 				// we will have a initialization here.
-				void initialize();
+				initialize();
 				break;
 			case '2':
 				cout << "Loading... \n"
@@ -68,25 +67,31 @@ int main()
 			// in all save.txt, all the data have the following format：
 			// hero name:
 			// game level that the player in:
-			// the character's money:
-			// the character's health point:
-			// the character's attack power:
-			// the character's defensive power:
-			// the character's agility:
-			// the character's race
-			// the character's equipment_1:
-			// the character's equipment_2:
-			// the character's equipment_3:
-			// the character's potion_1:
-			// the character's potion_2:
-			// the character's potion_3:
-			// the character's skill:
-			// the character's talent:
+			// the hero's money:
+			// the hero's health point:
+			// the hero's attack power:
+			// the hero's defensive power:
+			// the hero's agility:
+			// the hero's race
+			// the hero's equipment_1:
+			// the hero's equipment_2:
+			// the hero's equipment_3:
+			// the hero's potion_1:
+			// the hero's potion_2:
+			// the hero's potion_3:
+			// the hero's talent:
+			// the max_HealthPoint of the hero:
+
+			// we want to get the datas from the save.txt
+			// these global values will be used throughout the program.
+			
 
 			string l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16;
+			string heroName,race,equipment_1,equipment_2,equipment_3,potion_1,potion_2,potion_3;
+			int gameLevel,gold,healthPoint,attackPower,defensivePower,agility,max_HP;
 
 			getline(fin, l1);
-			characterName = l1;
+			heroName = l1;
 			getline(fin, l2);
 			istringstream is(l2);
 			is >> gameLevel;
@@ -110,7 +115,7 @@ int main()
 			getline(fin, l9);
 			equipment_1 = l9;
 			getline(fin, l10);
-			equipment_1 = l10;
+			equipment_2 = l10;
 			getline(fin, l11);
 			equipment_3 = l11;
 			getline(fin, l12);
@@ -120,14 +125,16 @@ int main()
 			getline(fin, l14);
 			potion_3 = l14;
 			getline(fin, l15);
-			skill = l15;
+			talent = l15;
 			getline(fin, l16);
-			talent = l16;
-			// we read the data from the file of character's status
+			istringstream is(l16);
+			is >> max_HP;
+
+			// we read the data from the file of hero's status
 			fin.close();
 
 			char toGo;
-			cout << "Hi, " << characterName << endl;
+			cout << "Hi, " << heroName << endl;
 			cout << "where do you want to go? \n"
 					"Enter I to go to Inn \n"
 					"Enter S to go to Shop \n"
