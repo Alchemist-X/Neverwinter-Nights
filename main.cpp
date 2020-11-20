@@ -128,7 +128,7 @@ int main()
 			cout << "Hi, " << characterName << endl;
 			cout << "where do you want to go? \n"
 					"Enter I to go to Inn \n"
-					"Enter S to go to Smithy \n"
+					"Enter S to go to Shop \n"
 					"Enter C to go to Church \n"
 					"Enter B to go to Bar \n"
 					"Enter W to go to wild and fight with enemy \n"
@@ -142,7 +142,7 @@ int main()
 				enterInn();
 				break;
 			case 'S':
-				enterSmithy();
+				enterShop();
 				break;
 			case 'C':
 				enterChurch();
