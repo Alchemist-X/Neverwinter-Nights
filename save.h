@@ -1,3 +1,6 @@
+#ifndef SAVE_H
+#define SAVE_H
+
 void Save()
 {
 	ofstream fout;
@@ -26,3 +29,5 @@ void Save()
 
 	fout.close();
 }
+
+#endif
