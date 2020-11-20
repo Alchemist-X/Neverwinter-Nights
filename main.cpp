@@ -20,18 +20,20 @@ int main()
 	bool continueProgram = 1;
 	bool saveExist = 1;
 	char playerChoice;
+	
+	//we use two loops to determinge control the game and program.
 	while (continueProgram)
 	{
-		ifstream fin("save.txt");
-		if (!fin)
+		ifstream fin("save.txt");
+		if (!fin)
 			saveExist = 0;
 
 		cout << "Welcome to the world of Neverwinter Nights! \n"
 		"***	New Game	***" << endl;
 		if (saveExist)
-			cout << "***	Load Game	***" << endl;
-		cout << "***	Developers	*** \n"
-		"***	Quit Game	***" << endl;
+			cout << "***   Load Game   ***" << endl;
+		cout << "***   Developers   *** \n"
+		"***   Quit Game   ***" << endl;
 		cout << "\n"
 		"Enter 1 to play a new game \n"
 		"Enter 2 to continue playing \n"
