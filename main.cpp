@@ -63,7 +63,7 @@ int main()
 			// we will read the hero's status from the save.txt file.
 			ifstream fin;
 			fin.open("save.txt");
-			// in all *status.txt, all the data have the following format：
+			// in all save.txt, all the data have the following format：
 			// hero name:
 			// game level that the player in:
 			// the character's money:
