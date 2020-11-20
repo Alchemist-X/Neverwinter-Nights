@@ -11,5 +11,5 @@ bool final()
     "Congratulation! warrior, with this legendary item, you are now able to end the tragedy in the world of Neverwinter Nights" << endl;
 
     continueProgram = false;
-    return end;
+    return continueProgram;
 }
