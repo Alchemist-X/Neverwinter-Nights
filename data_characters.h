@@ -15,6 +15,13 @@ struct Enemy
 	
 };
 
+Enemy Riddler;
+Enemy Joker;
+Enemy Thanos;
+Enemy Orc;
+Enemy Slime;
+Enemy FallenElf;
+
 
 struct Skill
 {
@@ -22,6 +29,11 @@ struct Skill
 	void skillPower();
 };
 
+void skillPower();
+Skill crit;
+Skill undefense;
+Skill miss;
+Skill reverse;
 
 
 #endif

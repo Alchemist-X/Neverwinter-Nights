@@ -1,38 +1,43 @@
 #include <iostream>
 #include "data_items.h"
-#include <string>
+#include "hero.h"
 #include <cstdlib>
 #include <cstring>
 #include <cctype>
-
+#include <string>
+using namespace std;
 
 //In this file, we decribe the functions 
 
-knife.equipmentName="Knife";
-knife.equipmentValue=100;
+Equipment knife = {"knife", 100};
+// knife.equipmentName="Knife";
+// knife.equipmentValue=100;
 
 
-sword.equipmentName="Sword";
-sword.equipmentValue=120;
+Equipment sword = {"sword", 120};
+// sword.equipmentName="Sword";
+// sword.equipmentValue=120;
+
+Equipment shield = {"shield", 130};
+// shield.equipmentName="Shield";
+// shield.equipmentValue=130;
 
 
-shield.equipmentName="Shield";
-shield.equipmentValue=130;
+Equipment armour = {"armour", 150};
+// armour.equipmentName="Armour";
+// armour.equipmentValue=150;
 
 
-armour.equipmentName="Armour";
-armour.equipmentValue=150;
-
-
-tank.equipmentName="Tank";
-tank.equipmentValue=250;
+Equipment tank = {"tank", 250};
+// tank.equipmentName="Tank";
+// tank.equipmentValue=250;
 
 void equipmentPower(string equipmentName)
 {	
 	// here we let pick the second character of equipmentName to determine the kind of equipment
 	
 	char temp[20];
-	strcpy(temp,equipmentName.c_str())
+	strcpy(temp,equipmentName.c_str());
 	char second_character;
 	second_character=temp[1];
 
@@ -75,21 +80,24 @@ void equipmentPower(string equipmentName)
 // we designed a few potions
 
 
-
-boold.potionName="Blood";
-boold.potionValue=50;
-
-
-strength.potionName="Strength";
-strength.potionValue=40;
+Potion blood = {"blood", 50};
+// boold.potionName="Blood";
+// boold.potionValue=50;
 
 
-hardness.potionName="Hardness";
-hardness.potionValue=60;
+Potion strength = {"strength", 40};
+// strength.potionName="Strength";
+// strength.potionValue=40;
 
 
-randomenhance.potionName="RandomEnhance";
-randomenhance.potionValue=30;
+Potion hardness = {"hardness", 60};
+// hardness.potionName="Hardness";
+// hardness.potionValue=60;
+
+
+Potion randomenhance = {"randomenhance", 30};
+// randomenhance.potionName="RandomEnhance";
+// randomenhance.potionValue=30;
 
 
 
@@ -108,7 +116,7 @@ void potionPower(string potionName)
 		break;
 
 		case 'B':
-		healthpoint+=20;
+		healthPoint+=20;
 		break;
 
 		case 'S':
@@ -125,7 +133,7 @@ void potionPower(string potionName)
 		int potionRandomNumber;
 		potionRandomNumber=rand()%3+1;
 		if (potionRandomNumber==1){
-			healthpoint+=20;
+			healthPoint+=20;
 		}
 		if (potionRandomNumber==2){
 			attackPower+=20;

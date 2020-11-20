@@ -9,6 +9,7 @@ struct Equipment
 	void equipmentPower(string equipmentName);
 };
 
+void equipmentPower(string equipmentName);
 Equipment knife;
 Equipment sword;
 Equipment shield;
@@ -25,6 +26,7 @@ struct Potion
 	void potionPower(string potionName);
 };
 
+void potionPower(string potionName);
 Potion blood;
 Potion strength;
 Potion hardness;

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "save.h"
+#include "hero.h"
 #include <fstream>
 using namespace std;
 
@@ -26,8 +27,8 @@ void Save()
 	fout << potion_1 << endl;
 	fout << potion_2 << endl;
 	fout << potion_3 << endl;
-	fout << skill << endl;
 	fout << talent << endl;
+	fout << max_HP << endl;
 
 	fout.close();
 }

@@ -1,9 +1,11 @@
 #include <iostream>
+#include <fstream>
 #include <string>
+#include "hero.h"
 using namespace std;
 
 
-void chooseDistribution()
+void chooseDistribution(int totalPoints, int healthPoint, int attackPower, int defensivePower, int agility)
 {
     int distribution_1,distribution_2,distribution_3,distribution_4;
     cin >> distribution_1 >> distribution_2 >> distribution_3 >> distribution_4;
@@ -18,7 +20,7 @@ void chooseDistribution()
     else
     {
         cout << "Invalid input! Please try again." << endl;
-        chooseDistribution();
+        chooseDistribution(totalPoints, healthPoint, attackPower, defensivePower, agility);
     }
 }
 
@@ -28,10 +30,9 @@ void chooseDistribution()
 
 void initialize()
 {   
-    string heroName,race;
     char decision;
-    int totalPoints,healthPoint,attackPower,defensivePower,agility,gold,gameLevel;
-
+    int totalPoints;
+    
     totalPoints = 30;
     healthPoint = 100;
     attackPower = 30;
@@ -55,7 +56,7 @@ void initialize()
     cout << "Please input four numbers, 1st stands for increase in attackPower, 2nd for defensivePower, 3rd for agility, 4th for healthPoint." << endl;
     
     
-    chooseDistribution();
+    chooseDistribution(totalPoints, healthPoint, attackPower, defensivePower, agility);
 
 
     cout << "Your character can have different races, please choose one of the following \n"

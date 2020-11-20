@@ -6,6 +6,7 @@
 #include <cctype>
 #include "scenes.h"
 #include "data_items.h"
+#include "hero.h"
 
 using namespace std;
 
@@ -20,30 +21,28 @@ void notEnoughGold()
          << endl;
 }
 
-void buyThings()
+void buyThings(string buyItem)
 {
-    string buyItem;
     cin >> buyItem;
 
-    if (golds < buyItem.equipmentValue)
-        notEnoughGold();
-    return;
-
-    if (equipment_1.size() == 0)
+    if (equipment_1 == "Empty")
     {
         equipment_1 = buyItem;
     }
     else
     {
-        if (equipment_2.size() == 0)
+        if (equipment_2 == "Empty")
         {
             equipment_2 = buyItem;
         }
         else
         {
-            if (equipment_3.size() == 0)
+            if (equipment_3 == "Empty")
             {
                 equipment_3 = buyItem;
+            }
+            else{
+                return;
             }
         }
     }
@@ -83,6 +82,7 @@ void enterInn()
 // this function shows what player will come across in the Shop.
 void enterShop()
 {
+    string buyItem;
     char player_decision;
 
     cout << "Welcome! Here you can see all the equipments\n"
@@ -106,7 +106,7 @@ void enterShop()
                 "Enter the exact name of equipments to buy it~"
              << endl;
 
-        buyThings();
+        buyThings(buyItem);
 
         break;
     case 'N':
