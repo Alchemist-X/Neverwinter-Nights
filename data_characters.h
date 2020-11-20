@@ -1,3 +1,7 @@
+#ifndef DATA_CHARACTERS_H
+#define DATA_CHARACTERS_H
+
+// In this file, we describe elements that are related with charcterr, namely player and enemies
 // we designed a few enemies.
 
 struct Enemy
@@ -134,7 +138,7 @@ void skillPower()
 }
 
 
-
+#endif
 
 
 
