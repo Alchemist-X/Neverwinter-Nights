@@ -34,7 +34,7 @@ void enterInn()
         default:
             cout << "invalid input, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterInn();
     }
 }
 
@@ -64,7 +64,7 @@ void enterSmithy()
         default:
             cout << "invalid input, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterSmithy();
     }
 }
 
@@ -105,7 +105,7 @@ void enterChurch()
         default:
             cout << "invalid move, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterChurch();
     }
 }
 
@@ -168,7 +168,7 @@ void enterBar()
         default:
             cout << "invalid move, please enter it again";
             cin >> player_decision;
-            switch (player_decision);
+            enterBar();
     }
 }
 
