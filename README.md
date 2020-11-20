@@ -34,7 +34,7 @@ On the beginning of game, after naming their characters, players will be given c
 
 **3. Moving and Travelling**
 
-The leading person of players' team will decide where to go. On different places, players will face different incidents and distinguishtive activities.
+The player can decide where to go. On different places, players will face different incidents and distinguishtive activities.
 
 **4. Battle System**
 
