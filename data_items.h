@@ -1,3 +1,7 @@
+#ifndef DATA_ITEMS_H
+#define DATA_ITEMS_H
+
+//In this file, we decribe the functions 
 struct Equipment
 {
 	string equipmentName;
@@ -143,3 +147,5 @@ void potionPower(string potionName)
 
 	}
 }
+
+#endif
