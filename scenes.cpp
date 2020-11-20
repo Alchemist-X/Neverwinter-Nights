@@ -13,17 +13,21 @@ using namespace std;
 
 // this function shows what player will come across in the inn.
 
+void notEnoughGold()
+{
+    cout << "Next time, remember to bring enough money! \n"
+            "you are kicked out of the door"
+         << endl;
+}
+
 void buyThings()
 {
     string buyItem;
     cin >> buyItem;
 
     if (golds < buyItem.equipmentValue)
-    {
-        cout << "Next time, remember to bring enough money! \n"
-        "The owner kick you out of the door" << endl;
-        return;
-    }
+        notEnoughGold();
+    return;
 
     if (equipment_1.size() == 0)
     {
@@ -32,9 +36,9 @@ void buyThings()
     else
     {
         if (equipment_2.size() == 0)
-            {
-                equipment_2 = buyItem;
-            }
+        {
+            equipment_2 = buyItem;
+        }
         else
         {
             if (equipment_3.size() == 0)
@@ -44,6 +48,7 @@ void buyThings()
         }
     }
     equipmentPower(buyItem);
+    cout << "Thank for purchasing! See u next time~" << endl;
 }
 
 void enterInn()
@@ -132,10 +137,44 @@ void enterChurch()
         cout << "What kind of property would you like to enhace?\n"
                 "ATK+5 (20 gold) \n"
                 "DEF+5 (30 gold) \n"
-                "AGI+5 (60 gold)"
+                "AGI+5 (60 gold) \n"
+                "HP+20 (40 gold) \n"
              << endl;
         cin >> player_decision;
-        // todo
+
+        cout << " Enter A to enhace ATK \n"
+                "Enter D to enhace DEF \n"
+                "ENter G to enhace AGI \n"
+                "Enter H to enhace HP "
+             << endl;
+
+        switch (player_decision)
+        {
+        case 'A':
+            if (gold < 20)
+                {notEnoughGold();
+                break;}
+            attackPower += 5;
+            break;
+        case 'D':
+            if (gold < 30)
+                {notEnoughGold();
+                break;}
+            defensivePower += 5;
+            break;
+        case 'G':
+            if (gold < 60)
+                {notEnoughGold();
+                break;}
+            agility += 5;
+            break;
+        case 'H':
+            if (gold < 40)
+                {notEnoughGold();
+                break;}
+            healthPoint += 20;
+            break;
+        }
     case '2':
         cout << "What kind of skill would you like to learn?\n"
                 "Fighting Style (15 gold) \n"
@@ -188,11 +227,12 @@ void enterBar()
                 "Enter 3 to listen to the travelling poet \n"
                 "Enter N to leave the Bar"
              << endl;
-        switch (player_decision)
-        case '2':
-            cout << "you make your way through the exciting crowds, begin chatting with the shopkeeper \n"
-                    "It's a new face here, would you like to take some missions?"
-                 << endl;
+        break;
+    case '2':
+        cout << "you make your way through the exciting crowds, begin chatting with the shopkeeper \n"
+                "It's a new face here, would you like to take some missions?"
+             << endl;
+        break;
         //todo
     case '3':
         cout << "Now he was of the strength that he bare weapons well \n"
@@ -213,9 +253,10 @@ void enterBar()
                 "Enter 3 to listen to the travelling poet \n"
                 "Enter N to leave the Bar"
              << endl;
-        switch (player_decision)
-        case 'N':
-            cout << "you slam the door and leave the Bar" << endl;
+        break;
+    case 'N':
+        cout << "you slam the door and leave the Bar" << endl;
+        break;
     default:
         cout << "invalid move, please enter it again";
         cin >> player_decision;
