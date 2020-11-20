@@ -92,7 +92,7 @@ int main()
 			is >> gameLevel;
 			getline(fin, l3);
 			istringstream is(l3);
-			is >> correntMoney;
+			is >> gold;
 			getline(fin, l4);
 			istringstream is(l4);
 			is >> healthPoint;
