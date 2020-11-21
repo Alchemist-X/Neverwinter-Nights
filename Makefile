@@ -2,7 +2,7 @@
 main : main.o wild.o scenes.o data_items.o data_characters.o save.o final.o initialization.o
 	g++ -pedantic-errors -std=c++11 $^ -o $@
 
-main.o : main.cpp wild.h scenes.h data_characters.h data_items.h save.h initialization.h final.h hero.h
+main.o : main.cpp wild.h scenes.h save.h initialization.h final.h hero.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
 wild.o : wild.cpp wild.h data_items.h data_characters.h hero.h

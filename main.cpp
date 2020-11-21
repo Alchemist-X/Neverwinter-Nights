@@ -5,8 +5,6 @@
 #include <sstream>
 #include <ctime>
 #include <cstdlib>
-#include "data_items.h"
-#include "data_characters.h"
 #include "initialization.h"
 #include "wild.h"
 #include "scenes.h"
