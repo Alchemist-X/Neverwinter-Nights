@@ -11,6 +11,12 @@
 #include "data_characters.h"
 using namespace std;
 
+Enemy Riddler = {"Riddler",100,100,30,20,10};
+Enemy Joker = {"Joker",200,150,60,30,40};
+Enemy Thanos = {"Thanos",500,300,100,80,70};
+Enemy Orc = {"Orc",60,30,20,5,10};
+Enemy Slime = {"Slime",80,90,5,15,5};
+Enemy FallenElf = {"FallenElf",200,45,20,1,70};
 
 
 // there are several pivotal functions in this program.

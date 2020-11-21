@@ -205,7 +205,7 @@ void enterBar()
 
     beer_count = 0;
 
-    cout << "You enter the noisy and crowded bar, what would you like to do? \n"
+    cout << "You are in a noisy and crowded bar, what would you like to do? \n"
             "Enter 1 to have a cup of beer (cost 3 gold) \n"
             "Enter 2 to chat with the owner \n"
             "Enter 3 to listen to the travelling poet \n"
@@ -220,13 +220,8 @@ void enterBar()
         // todo
         beer_count++;
         cout << "I got more important thing to do, rather than getting drunk here \n"
-
-                "So, what's your next step? \n"
-                "Enter 1 to have a cup of beer (cost 3 gold) \n"
-                "Enter 2 to chat with the shopkeeper \n"
-                "Enter 3 to listen to the travelling poet \n"
-                "Enter N to leave the Bar"
              << endl;
+        enterBar();
         break;
     case '2':
         cout << "you make your way through the exciting crowds, begin chatting with the shopkeeper \n"

@@ -6,6 +6,11 @@
 #include <ctime>
 using namespace std;
 
+// we designed a few skills
+Skill crit = {"Crit"};
+Skill undefense = {"undefense"};
+Skill Miss = {"Miss"};
+Skill Reverse = {"Reverse"};
 
 void skillPower(Enemy enemyToBattle)
 {

@@ -13,16 +13,16 @@ struct Equipment
 
 void equipmentPower(std::string equipmentName);
 
-// Equipment knife;
-// Equipment sword;
-// Equipment shield;
-// Equipment armour;
-// Equipment tank;
-Equipment knife = {"knife", 100};
-Equipment sword = {"sword", 120};
-Equipment shield = {"shield", 130};
-Equipment armour = {"armour", 150};
-Equipment tank = {"tank", 250};
+extern Equipment knife;
+extern Equipment sword;
+extern Equipment shield;
+extern Equipment armour;
+extern Equipment tank;
+// Equipment knife = {"knife", 100};
+// Equipment sword = {"sword", 120};
+// Equipment shield = {"shield", 130};
+// Equipment armour = {"armour", 150};
+// Equipment tank = {"tank", 250};
 
 // we designed a few potions
 
@@ -34,14 +34,10 @@ struct Potion
 };
 
 void potionPower(std::string potionName);
-// Potion blood;
-// Potion strength;
-// Potion hardness;
-// Potion randomenhance;
+extern Potion blood;
+extern Potion strength;
+extern Potion hardness;
+extern Potion randomenhance;
 
-Potion blood = {"blood", 50};
-Potion strength = {"strength", 40};
-Potion hardness = {"hardness", 60};
-Potion randomenhance = {"randomenhance", 30};
 
 #endif

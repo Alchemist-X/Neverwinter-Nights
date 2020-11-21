@@ -8,7 +8,16 @@
 #include <string>
 using namespace std;
 
+Equipment knife = {"knife", 100};
+Equipment sword = {"sword", 120};
+Equipment shield = {"shield", 130};
+Equipment armour = {"armour", 150};
+Equipment tank = {"tank", 250};
 
+Potion blood = {"blood", 50};
+Potion strength = {"strength", 40};
+Potion hardness = {"hardness", 60};
+Potion randomenhance = {"randomenhance", 30};
 
 void equipmentPower(string equipmentName)
 {	

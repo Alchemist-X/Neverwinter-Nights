@@ -20,20 +20,21 @@ struct Enemy
 // enemy one, the Riddler
 // enemy two, the Joker
 // enemy three, the Thanos
-Enemy Riddler = {"Riddler",100,100,30,20,10};
-Enemy Joker = {"Joker",200,150,60,30,40};
-Enemy Thanos = {"Thanos",500,300,100,80,70};
+// Enemy Riddler = {"Riddler",100,100,30,20,10};
+// Enemy Joker = {"Joker",200,150,60,30,40};
+// Enemy Thanos = {"Thanos",500,300,100,80,70};
 
 // there are three little enemies we can percieve them as Monsters.
-Enemy Orc = {"Orc",60,30,20,5,10};
-Enemy Slime = {"Slime",80,90,5,15,5};
-Enemy FallenElf = {"FallenElf",200,45,20,1,70};
-// Enemy Riddler;
-// Enemy Joker;
-// Enemy Thanos;
-// Enemy Orc;
-// Enemy Slime;
-// Enemy FallenElf;
+// Enemy Orc = {"Orc",60,30,20,5,10};
+// Enemy Slime = {"Slime",80,90,5,15,5};
+// Enemy FallenElf = {"FallenElf",200,45,20,1,70};
+
+extern Enemy Riddler;
+extern Enemy Joker;
+extern Enemy Thanos;
+extern Enemy Orc;
+extern Enemy Slime;
+extern Enemy FallenElf;
 
 
 struct Skill
@@ -43,16 +44,11 @@ struct Skill
 };
 
 void skillPower(Enemy enemyToBattle);
-// Skill crit;
-// Skill undefense;
-// Skill miss;
-// Skill reverse;
+extern Skill crit;
+extern Skill undefense;
+extern Skill miss;
+extern  Skill reverse;
 
-// we designed a few skills
-Skill crit = {"Crit"};
-Skill undefense = {"undefense"};
-Skill Miss = {"Miss"};
-Skill Reverse = {"Reverse"};
 
 #endif
 
