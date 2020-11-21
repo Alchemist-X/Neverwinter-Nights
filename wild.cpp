@@ -66,12 +66,12 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag, int 
 		// the player choose to give a common attack
 			if ((attackPower - enemyToBattle.enemyDefensivePower) >0){
 				enemyToBattle.enemyHealthPoint = enemyToBattle.enemyHealthPoint + enemyToBattle.enemyDefensivePower - attackPower;
-				cout << "\n The enemy have suffered " << attackPower - enemyToBattle.enemyDefensivePower << "point of ATK from you." << endl;
-				cout << "\n Enemy's current HP is " << enemyToBattle.enemyHealthPoint << "." << endl;
+				cout << "\nThe enemy have suffered " << attackPower - enemyToBattle.enemyDefensivePower << " point of ATK from you." << endl;
+				cout << "Enemy's current HP is " << enemyToBattle.enemyHealthPoint << "." << endl;
 			}
 
 			else{
-				cout <<"\n Your attackPower is so weak that the enemy did not suffer from you." << endl;
+				cout <<"Your attackPower is so weak that the enemy did not suffer from you." << endl;
 			}
 			
 			break;
@@ -79,7 +79,7 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag, int 
 		case 2:
 		// the player choose to use the potion
 					
-		cout << "Please enter the name of the potion name that you want to use." << endl;
+		cout << "\nPlease enter the name of the potion name that you want to use." << endl;
 		cout << "There are these potions in your package ('Empty' means no potion in the package): " <<endl;
 		cout << "Potion_1 : " << potion_1 << endl;
 		cout << "Potion_2 : " << potion_2 << endl;
@@ -92,18 +92,19 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag, int 
 
 		case 3:
 		// the player chooses to use the skills
+		cout << "you decide to use skills" << endl;
 		skillPower(enemyToBattle, healthPoint, attackPower, defensivePower);
 		break;
 
 		case 4:
 		// the player chooses to escape from the fight
-		cout << "You escaped from the fight." << endl;
+		cout << "\nYou escaped from the fight." << endl;
 		isEscape(choiceOfTheRound,flag);
 		break;
 
 		default:
 		// if the player enter a wrong number, we should let the player input another number.
-		cout << "Invalid input! Please try again." << endl;
+		cout << "\nInvalid input! Please try again." << endl;
 		cin >> choiceOfTheRound;
 		choiceInRound(choiceOfTheRound, enemyToBattle, flag, healthPoint, attackPower, defensivePower, agility);
 
@@ -151,9 +152,9 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 	}
 	
 
-	cout << "You will chanllenge " << enemyToBattle.enemyName << "this time. \n" << endl;
-	cout << "Your agility is " << agility << ". \n" << endl;
-	cout << "Your enemy's agility is " << enemyToBattle.enemyAgility << ".\n" << endl;
+	cout << "You will chanllenge " << enemyToBattle.enemyName << " this time. \n" << endl;
+	cout << "Your agility is " << agility << ".\n" << endl;
+	cout << "Your enemy's agility is " << enemyToBattle.enemyAgility << "." << endl;
 
 	// compare the agility of the hero and enemy, to determine whether the hero or the enemy fight first.
 
@@ -194,12 +195,12 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 			
 			if ((- defensivePower + enemyToBattle.enemyAttackPower)>0){
 				healthPoint = healthPoint + defensivePower - enemyToBattle.enemyAttackPower;
-				cout << "\n You have suffered " << - defensivePower + enemyToBattle.enemyAttackPower << "point of ATK from the enemy." << endl;
+				cout << "\n You have suffered " << - defensivePower + enemyToBattle.enemyAttackPower << " points of ATK from the enemy." << endl;
 				cout << "\n Your current HP is " << healthPoint << "." << endl;
 			}
 
 			else{
-				cout << "\n Your defensivePower is so strong that you did not suffer the attack." << endl;
+				cout << "\n Your defensivePower is so strong that you did not lose HP." << endl;
 				cout << "\n Your current HP is " << healthPoint << endl;
 			}
 
