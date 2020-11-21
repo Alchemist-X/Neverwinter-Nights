@@ -134,6 +134,9 @@ void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &a
             "Enter N to leave"
          << endl;
     cin >> player_decision;
+    string *s= new string ("Go ahead and fight the enemies!");
+    cout << *s << endl;
+    delete s;
 
     switch (player_decision)
     {
@@ -231,10 +234,12 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
             attackPower = attackPower +30;
         enterBar(healthPoint, attackPower, defensivePower, agility, gold);
         break;
+
     case '2':
         cout << "you make your way through the exciting crowds, begin chatting with the shopkeeper \n"
                 "It's a new face here, would you like to take some missions?"
              << endl;
+
         break;
         //todo
     case '3':
@@ -251,6 +256,7 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
              << endl;
         enterBar(healthPoint, attackPower, defensivePower, agility, gold);
         break;
+
     case 'N':
         cout << "you slam the door and leave the Bar" << endl;
         break;
