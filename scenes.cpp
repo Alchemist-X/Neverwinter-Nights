@@ -15,7 +15,7 @@ using namespace std;
 // this function shows what player will come across in the inn.
 void notEnoughGold()
 {
-    cout << "Next time, remember to bring enough money! \n"
+    cout << "\nYou don't have enough money \n"
             "you are kicked out of the door."
          << endl;
 }
@@ -46,14 +46,14 @@ void buyThings(int &healthPoint, int &attackPower, int &defensivePower, int &gol
         }
     }
     equipmentPower(buyItem, healthPoint, attackPower, defensivePower, gold);
-    cout << "Thank for purchasing! See u next time~" << endl;
+    cout << "\nThank for purchasing! See u next time~" << endl;
 }
 
 void enterInn(int &healthPoint, int &gold)
 {
     char player_decision;
 
-    cout << "Welcome to the Inn, would you like to have a rest? \n"
+    cout << "\nWelcome to the Inn, would you like to have a rest? \n"
             "With only 20 gold, you could enjoy the cozy bed and warm drink \n"
             "Enter Y to stay, N to leave the Inn"
          << endl;
@@ -62,8 +62,8 @@ void enterInn(int &healthPoint, int &gold)
     switch (player_decision)
     {
     case 'Y':
-        cout << "you have a good sleep in a comfortable room, you feel energetic again." << endl;
-        if (gold >=0)
+        cout << "\nyou have a good sleep in a comfortable room, you feel energetic again." << endl;
+        if (gold >=20)
         {
             healthPoint = max_HP;
             gold -= 20;
@@ -90,7 +90,7 @@ void enterShop(int &healthPoint, int &attackPower, int &defensivePower, int &agi
     string buyItem;
     char player_decision;
 
-    cout << "Welcome! Here you can see all the equipments\n"
+    cout << "\nWelcome! Here you can see all the equipments\n"
             "As long as you pay a good price, i could provide you with whatever you want\n"
             "Would like to have a look?"
          << endl;
@@ -101,8 +101,8 @@ void enterShop(int &healthPoint, int &attackPower, int &defensivePower, int &agi
     switch (player_decision)
     {
     case 'Y':
-        cout << "Sir, take a look at these handy equipments" << endl;
-        cout << "The equipments are listed below \n"
+        cout << "\nSir, take a look at these handy equipments" << endl;
+        cout << "\nThe equipments are listed below \n"
                 " Knife *** gold:100 *** ATK+30 *** DEF+10 *** \n"
                 " Sword *** gold:120 *** ATK+40 *** DEF+10 *** \n"
                 "Shield *** gold:130 *** ATK+10 *** DEF+30 *** \n"
@@ -112,12 +112,12 @@ void enterShop(int &healthPoint, int &attackPower, int &defensivePower, int &agi
              << endl;
 
         buyThings(healthPoint, attackPower, defensivePower, gold, buyItem);
-
-        break;
+            break;
     case 'N':
-        cout << "you slam the door and leave the Shop" << endl;
+        cout << "\nyou slam the door and leave the Shop" << endl;
+        break;
     default:
-        cout << "invalid input, please enter it again";
+        cout << "\ninvalid input, please enter it again";
         cin >> player_decision;
         enterShop(healthPoint, attackPower, defensivePower, agility, gold);
     }
@@ -128,7 +128,7 @@ void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &a
 {
     char player_decision;
 
-    cout << "Welcome! I am priest Martin, what can i do for you?" << endl;
+    cout << "\nWelcome! I am priest Martin, what can i do for you?" << endl;
     cout << "Enter 1 to see property promotion\n"
             "Enter 2 to see provided skills\n"
             "Enter N to leave"
@@ -138,19 +138,18 @@ void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &a
     switch (player_decision)
     {
     case '1':
-        cout << "What kind of property would you like to enhace?\n"
+        cout << "\nWhat kind of property would you like to enhace?\n"
                 "ATK+5 (20 gold) \n"
                 "DEF+5 (30 gold) \n"
                 "AGI+5 (60 gold) \n"
                 "HP+20 (40 gold) \n"
              << endl;
-        cin >> player_decision;
-
-        cout << " Enter A to enhace ATK \n"
-                "Enter D to enhace DEF \n"
-                "ENter G to enhace AGI \n"
-                "Enter H to enhace HP "
+        cout << "\nEnter A to enhace ATK \n"
+        "Enter D to enhace DEF \n"
+        "Enter G to enhace AGI \n"
+        "Enter H to enhace HP "
              << endl;
+        cin >> player_decision;
 
         switch (player_decision)
         {
@@ -179,8 +178,9 @@ void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &a
             healthPoint += 20;
             break;
         }
+        break;
     case '2':
-        cout << "What kind of skill would you like to learn?\n"
+        cout << "\nWhat kind of skill would you like to learn?\n"
                 "Fighting Style (15 gold) \n"
                 "** skilful fighting allow you to increase ATK by 5 points ** \n"
                 "Extra Attack (60 gold) \n"
@@ -190,8 +190,10 @@ void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &a
              << endl;
         cin >> player_decision;
         // todo
+        break;
     case 'N':
-        cout << "you slam the door and leave the Church" << endl;
+        cout << "\nyou slam the door and leave the Church" << endl;
+        break;
     default:
         cout << "invalid move, please enter it again";
         cin >> player_decision;
@@ -208,8 +210,8 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
 
     beer_count = 0;
 
-    cout << "You are in a noisy and crowded bar, what would you like to do? \n"
-            "Enter 1 to have a cup of beer (cost 3 gold) \n"
+    cout << "\nYou are now in a noisy and crowded bar, what would you like to do? \n"
+            "\nEnter 1 to have a cup of beer (cost 3 gold) \n"
             "Enter 2 to chat with the owner \n"
             "Enter 3 to listen to the travelling poet \n"
             "Enter N to leave the Bar"
@@ -224,6 +226,8 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
         beer_count++;
         cout << "I got more important thing to do, rather than getting drunk here \n"
              << endl;
+        if(bear_count = 3)
+            attackPower = attackPower +30;
         enterBar(healthPoint, attackPower, defensivePower, agility, gold);
         break;
     case '2':
@@ -233,7 +237,7 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
         break;
         //todo
     case '3':
-        cout << "Now he was of the strength that he bare weapons well \n"
+        cout << "\n...\nNow he was of the strength that he bare weapons well \n"
                 "Whatever he needed thereto, of this he had enow. With purpose he began to woo fair ladies \n"
                 "these bold Siegfried courted well in proper wise \n"
                 "Then bade Siegmund have cried to all his men, that he would hold a feasting with his loving kindred \n"
@@ -242,15 +246,9 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
                 "these noble youths were summoned to the land for the feasting \n"
                 "…… \n"
                 "It's late now \n"
-                "Let's continue the story of Siegfiled in another day"
+                "Let's continue the story of Siegfiled in another day\n"
              << endl;
-
-        cout << "So, what's your next step? \n"
-                "Enter 1 to have a cup of beer (cost 3 gold) \n"
-                "Enter 2 to chat with the shopkeeper \n"
-                "Enter 3 to listen to the travelling poet \n"
-                "Enter N to leave the Bar"
-             << endl;
+        enterBar(healthPoint, attackPower, defensivePower, agility, gold);
         break;
     case 'N':
         cout << "you slam the door and leave the Bar" << endl;
