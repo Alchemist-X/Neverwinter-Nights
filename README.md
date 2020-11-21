@@ -52,7 +52,7 @@ Players can save their progress in the cozy taverns. If they unluckily get all k
 
 As long as players make themselves to the deepest spot of this ancient relic, getting the legendary item -- the condemned heart of fallen Lich, beating up the final boss. They will be able to end the tragedy in this cursed area and got final victory.
 
-## Please do have a look on our gameplay_example.txt file ##
+**Please do have a look on our gameplay_example.txt file!!**
 
 ## Libray we might use:
 
