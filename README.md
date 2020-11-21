@@ -92,7 +92,6 @@ feature 5: we will make several files, such as the boss file, weapons file, and 
 
 
 ## Noticable Features
-
 To follow Code Requirement, we have done folloing things ~
 
 **1. Generation of random game sets or events**
@@ -117,8 +116,8 @@ e.g. We have files including multiple .h .cpp files
 
 **6. Proper indentation and naming styles**
 
-We follow the well recommended coding style for C++ and have use IDE to automatically adjust it.
+We follow the mostly recommended coding style for C++ and have use IDE to automatically adjust it.
 
 **7. In-code documentation**
 
-With thoutough in-code documentation, our program is quitely friendly for developers and thus facilitating future development.
+With thorough in-code documentations, our program is quitely friendly for developers and thus facilitating future development.
