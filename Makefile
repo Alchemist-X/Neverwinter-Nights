@@ -26,4 +26,5 @@ final.o : final.cpp final.h hero.h
 initialization.o : initialization.cpp initialization.h hero.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
-
+clean:
+	rm -f *.o
