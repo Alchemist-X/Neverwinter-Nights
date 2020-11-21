@@ -8,10 +8,10 @@ struct Equipment
 {
 	std::string equipmentName;
 	double equipmentValue;
-	void equipmentPower(std::string equipmentName);
+	void equipmentPower(std::string equipmentName, int &healthPoint, int &attackPower, int &defensivePower, int &gold);
 };
 
-void equipmentPower(std::string equipmentName);
+void equipmentPower(std::string equipmentName, int &healthPoint, int &attackPower, int &defensivePower, int &gold);
 
 extern Equipment knife;
 extern Equipment sword;
@@ -30,10 +30,10 @@ struct Potion
 {
 	std::string potionName;
 	double potionValue;
-	void potionPower(std::string potionName);
+	void potionPower(std::string potionName,int &healthPoint, int &attackPower, int &defensivePower);
 };
 
-void potionPower(std::string potionName);
+void potionPower(std::string potionName,int &healthPoint, int &attackPower, int &defensivePower);
 extern Potion blood;
 extern Potion strength;
 extern Potion hardness;

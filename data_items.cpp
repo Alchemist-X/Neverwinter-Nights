@@ -19,7 +19,7 @@ Potion strength = {"strength", 40};
 Potion hardness = {"hardness", 60};
 Potion randomenhance = {"randomenhance", 30};
 
-void equipmentPower(string equipmentName)
+void equipmentPower(string equipmentName, int &healthPoint, int &attackPower, int &defensivePower, int &gold)
 {	
 	// here we let pick the second character of equipmentName to determine the kind of equipment
 	
@@ -65,7 +65,7 @@ void equipmentPower(string equipmentName)
 
 
 
-void potionPower(string potionName)
+void potionPower(string potionName, int &healthPoint, int &attackPower, int &defensivePower)
 {
 	// here we pick up the first character to determine the potion kind.
 	char temp[20];
@@ -110,7 +110,7 @@ void potionPower(string potionName)
 		default:
 		cout << "Ivalid input, please enter again." << endl;
 		cin >> potionName;
-		potionPower(potionName);
+		potionPower(potionName,healthPoint,attackPower,defensivePower);
 
 	}
 }

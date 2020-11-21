@@ -56,7 +56,7 @@ void isEscape(int escape, bool &flag)
 
 
 // this is the function related to the player's choices in the round.
-void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag)
+void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag, int &healthPoint, int &attackPower, int &defensivePower, int &agility)
 {	
 	string choiceOfThePotion;
 	
@@ -87,12 +87,12 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag)
 		cout << "Please enter 'Empty' if your package is empty as well. " << endl;
 
 		cin >> choiceOfThePotion;
-		potionPower(choiceOfThePotion);
+		potionPower(choiceOfThePotion, healthPoint, attackPower, defensivePower);
 		break;
 
 		case 3:
 		// the player chooses to use the skills
-		skillPower(enemyToBattle);
+		skillPower(enemyToBattle, healthPoint, attackPower, defensivePower);
 		break;
 
 		case 4:
@@ -105,7 +105,7 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag)
 		// if the player enter a wrong number, we should let the player input another number.
 		cout << "Invalid input! Please try again." << endl;
 		cin >> choiceOfTheRound;
-		choiceInRound(choiceOfTheRound, enemyToBattle, flag);
+		choiceInRound(choiceOfTheRound, enemyToBattle, flag, healthPoint, attackPower, defensivePower, agility);
 
 	}
 }
@@ -113,10 +113,10 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag)
 
 // we will build the fight scene here
 	
-bool enterWild()	
+bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold)	
 {
+	bool continueGame =1;
 	bool flag =1;
-	bool continueGame = 1 ;
 	int round=1;
 
 	Enemy enemyToBattle;
@@ -221,7 +221,7 @@ bool enterWild()
 
 			int choiceOfTheRound;
 			cin >> choiceOfTheRound;
-			choiceInRound(choiceOfTheRound, enemyToBattle,flag);
+			choiceInRound(choiceOfTheRound, enemyToBattle,flag,healthPoint,attackPower,defensivePower,agility);
 
 			// after this round, we will change the turn for the fight
 			turn = enemyTurn;

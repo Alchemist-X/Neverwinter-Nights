@@ -148,22 +148,22 @@ int main()
 			switch (toGo)
 			{
 			case 'I':
-				enterInn();
+				enterInn(healthPoint, gold);
 				break;
 			case 'S':
-				enterShop();
+				enterShop(healthPoint, attackPower, defensivePower, agility, gold);
 				break;
 			case 'C':
-				enterChurch();
+				enterChurch(healthPoint, attackPower, defensivePower, agility, gold);
 				break;
 			case 'B':
-				enterBar();
+				enterBar(healthPoint, attackPower, defensivePower, agility, gold);
 				break;
 			case 'W':
-				enterWild();
+				enterWild(healthPoint, attackPower, defensivePower, agility, gold);
 				break;
 			case 'Q':
-				Save();
+				Save(heroName,gameLevel,gold,healthPoint,attackPower,defensivePower,agility,race,equipment_1,equipment_2,equipment_3,potion_1,potion_2,potion_3,talent,max_HP);
 				break;
 			}
 		}

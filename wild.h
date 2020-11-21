@@ -2,7 +2,7 @@
 #define WILD_H
 
 // this function shows how to conduct battles with enemies.
-bool enterWild();
+bool enterWild(int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold);
 
 #endif
 

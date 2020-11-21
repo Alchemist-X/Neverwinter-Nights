@@ -12,7 +12,7 @@ Skill undefense = {"undefense"};
 Skill Miss = {"Miss"};
 Skill Reverse = {"Reverse"};
 
-void skillPower(Enemy enemyToBattle)
+void skillPower(Enemy enemyToBattle, int &healthPoint, int &attackPower, int &defensivePower)
 {
 	srand(time(NULL));
 	int skillRandomNumber;

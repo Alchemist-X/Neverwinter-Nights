@@ -13,15 +13,14 @@ using namespace std;
 // In this file, we write several scenes that are waiting for the player to discover.
 
 // this function shows what player will come across in the inn.
-
 void notEnoughGold()
 {
     cout << "Next time, remember to bring enough money! \n"
-            "you are kicked out of the door"
+            "you are kicked out of the door."
          << endl;
 }
 
-void buyThings(string buyItem)
+void buyThings(int &healthPoint, int &attackPower, int &defensivePower, int &gold , string buyItem)
 {
     cin >> buyItem;
 
@@ -46,11 +45,11 @@ void buyThings(string buyItem)
             }
         }
     }
-    equipmentPower(buyItem);
+    equipmentPower(buyItem, healthPoint, attackPower, defensivePower, gold);
     cout << "Thank for purchasing! See u next time~" << endl;
 }
 
-void enterInn()
+void enterInn(int &healthPoint, int &gold)
 {
     char player_decision;
 
@@ -63,9 +62,15 @@ void enterInn()
     switch (player_decision)
     {
     case 'Y':
-        cout << "you have a good sleep in a comfortable room, you feel energetic again" << endl;
-        healthPoint = max_HP;
-        gold -= 20;
+        cout << "you have a good sleep in a comfortable room, you feel energetic again." << endl;
+        if (gold >=0)
+        {
+            healthPoint = max_HP;
+            gold -= 20;
+        }
+        else
+            notEnoughGold();
+        
         break;
 
     case 'N':
@@ -75,12 +80,12 @@ void enterInn()
     default:
         cout << "invalid input, please enter it again";
         cin >> player_decision;
-        enterInn();
+        enterInn(healthPoint,gold);
     }
 }
 
 // this function shows what player will come across in the Shop.
-void enterShop()
+void enterShop(int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold)
 {
     string buyItem;
     char player_decision;
@@ -106,7 +111,7 @@ void enterShop()
                 "Enter the exact name of equipments to buy it~"
              << endl;
 
-        buyThings(buyItem);
+        buyThings(healthPoint, attackPower, defensivePower, gold, buyItem);
 
         break;
     case 'N':
@@ -114,15 +119,14 @@ void enterShop()
     default:
         cout << "invalid input, please enter it again";
         cin >> player_decision;
-        enterShop();
+        enterShop(healthPoint, attackPower, defensivePower, agility, gold);
     }
 }
 
 // this function shows what player will come across in the Church.
-void enterChurch()
+void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold)
 {
     char player_decision;
-    int current_gold;
 
     cout << "Welcome! I am priest Martin, what can i do for you?" << endl;
     cout << "Enter 1 to see property promotion\n"
@@ -191,16 +195,15 @@ void enterChurch()
     default:
         cout << "invalid move, please enter it again";
         cin >> player_decision;
-        enterChurch();
+        enterChurch(healthPoint, attackPower, defensivePower, agility, gold);
     }
 }
 
 // this function shows what player will come across in the Bar.
-void enterBar()
+void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold)
 {
     char player_decision;
     string current_mission;
-    int current_gold;
     int beer_count;
 
     beer_count = 0;
@@ -221,7 +224,7 @@ void enterBar()
         beer_count++;
         cout << "I got more important thing to do, rather than getting drunk here \n"
              << endl;
-        enterBar();
+        enterBar(healthPoint, attackPower, defensivePower, agility, gold);
         break;
     case '2':
         cout << "you make your way through the exciting crowds, begin chatting with the shopkeeper \n"
@@ -255,6 +258,6 @@ void enterBar()
     default:
         cout << "invalid move, please enter it again";
         cin >> player_decision;
-        enterBar();
+        enterBar(healthPoint, attackPower, defensivePower, agility, gold);
     }
 }

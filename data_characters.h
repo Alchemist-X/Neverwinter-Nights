@@ -40,10 +40,10 @@ extern Enemy FallenElf;
 struct Skill
 {
 	std::string skillName;
-	void skillPower(Enemy enemyToBattle);
+	void skillPower(Enemy enemyToBattle, int &healthPoint, int &attackPower, int &defensivePower);
 };
 
-void skillPower(Enemy enemyToBattle);
+void skillPower(Enemy enemyToBattle, int &healthPoint, int &attackPower, int &defensivePower);
 extern Skill crit;
 extern Skill undefense;
 extern Skill miss;
