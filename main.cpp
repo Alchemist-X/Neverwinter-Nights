@@ -17,6 +17,7 @@ int gameLevel,gold,healthPoint,attackPower,defensivePower,agility,max_HP;
 bool continueGame = 1;
 bool continueProgram = 1;
 bool saveExist = 1;
+bool final(bool &continuGame);
 
 int main()
 {
@@ -29,8 +30,8 @@ int main()
 		if (!fin)
 			saveExist = 0;
 
-		cout << "Welcome to the world of Neverwinter Nights! \n"
-		"***	New Game	***" << endl;
+		cout << "\nWelcome to the world of Neverwinter Nights! \n"
+		"***   New Game   ***" << endl;
 		if (saveExist)
 			cout << "***   Load Game   ***" << endl;
 		cout << "***   Developers   *** \n"
@@ -48,16 +49,21 @@ int main()
 				initialize();
 				break;
 			case '2':
-				cout << "Loading... \n"
-				"Welcome Back! Adventurer~" << endl;
+				cout << "\nLoading... \n"
+				"Welcome Back! Adventurer ~" << endl;
 				break;
 			case '3':
-				cout << "Co-Developers"
+				cout << "\nCo-Developers"
 				"Yishu Wang BEng(CE) Yr2 \n"
 				"Shuang Wu BSC Yr2" << endl;
 				break;
 			case '4':
 				return 0;
+				break;
+			case 'M':
+				cout << "\nDeveloper's shortcut \n"
+				"let's see the end of game ~ \n" << endl;
+				final(continueGame);
 		}
 
 		while (continueGame)
@@ -168,4 +174,21 @@ int main()
 			}
 		}
 	}
+}
+
+
+// This is the final chapter of the game
+bool final(bool &continuGame)
+{
+
+    cout << "\nYour blade inserts the chest of Thanos \n"
+    "It's ...... impossible!!! Thanos yell out \n"
+    "Within second, the giant creature falls dawn and turn into ahses immediately \n"
+    "In the ground, you suprisingly find the ... !!! \n"
+    "The condemned heart of fallen Lich !!!! \n"
+    "Congratulation! warrior, with this legendary item, you are now able to end the tragedy in the world of Neverwinter Nights \n" 
+	"THE END" << endl;
+    continueProgram = false;
+	continueGame = false;
+    return continueProgram;
 }
