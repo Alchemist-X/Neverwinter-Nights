@@ -1,6 +1,7 @@
 # Neverwinter Nights ![](https://img.shields.io/badge/License-HKU-yellow) ![](https://img.shields.io/badge/Course-ENGG1340-blue)
 
 
+
 ## Install
 
 Please use the command "./main" after the command "make" :)
@@ -22,6 +23,8 @@ In charge of the various scenes design, makefile and complilation issues
 **Shuang Wu (BSc, Year 2, UID:3035639109, user name: wsjack22)**
 
 In charge of the complex battle system, database structure design
+
+
 
 ## Game Description & Basic Rules
 
@@ -61,6 +64,7 @@ Players can save their progress when deciding where-to-go. If they unluckily get
 As long as players make themselves to the deepest spot of this ancient relic, getting the legendary item -- the condemned heart of fallen Lich, beating up the final boss. They will be able to end the tragedy in this cursed area and got final victory.
 
 
+
 ## Libray We Use:
 
 cstdlib and ctime: use for make random numbers while rolling the dice.
@@ -82,13 +86,19 @@ iomanip: manipulate input and output.
 // we also cover extern and static variables in our program
 
 
+
 ## Coming Features (initial goal, for prposal only)
 
 feature 1: we will generate random numbers to make the each boss, each payoff after winning random.
+
 feature 2: we will make a data file to store the level, the weapons, the money that a player have.
+
 feature 3: we will make it possible to enter a player's data by type in the player's username.
+
 feature 4: we will make it possible to change the game status(level,or weapons etc.) by inputting & outputting when necessary.
+
 feature 5: we will make several files, such as the boss file, weapons file, and we will make it possible to program these files as a whole.
+
 
 
 ## Noticable Features
