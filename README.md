@@ -9,7 +9,7 @@ Have fun and enjoy your playing!
 
 ```
 make
-./main
+./Neverwinter-Nights
 ```
 
 
