@@ -86,12 +86,12 @@ void initialize()
     "Please decide the name for your character, press Enter to finish ~" << endl;
 
     cin >> heroName;
-    cout << "Cool! " << heroName << " , A name of Warrior" << endl;
-    cout << "\nNow, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. " << endl;
-    cout << "\n** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agility and health points ins equence. **" << endl;
+    cout << "Cool! " << heroName << " ,A name of Warrior" << endl;
+    cout << "Now, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. " << endl;
+    cout << "** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agility and health points ins equence. **" << endl;
     cout << "\nYou will be give 30 points in total" << endl;
-    cout << "\nPlease enter the points that you want to distribute on attributes" << endl;
-    cout << "\nPlease input four numbers, 1st stands for increase in attackPower, 2nd for defensivePower, 3rd for agility, 4th for healthPoint." << endl;
+    cout << "Please enter the points that you want to distribute on attributes" << endl;
+    cout << "Please input four numbers, 1st stands for increase in attackPower, 2nd for defensivePower, 3rd for agility, 4th for healthPoint." << endl;
     
     
     chooseDistribution(totalPoints, healthPoint, attackPower, defensivePower, agility);

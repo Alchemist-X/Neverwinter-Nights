@@ -165,13 +165,13 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 	if (agility <= enemyToBattle.enemyAgility)
 	{
 		cout << endl;
-		cout << "Enemy will fight first.\n" << endl;
+		cout << "Enemy will fight first." << endl;
 		turn = enemyTurn;
 	}
 	else
 	{
 		cout << endl;
-		cout << "You will fight first.\n" << endl;
+		cout << "You will fight first." << endl;
 		turn = heroTurn;
 	}
 
@@ -180,7 +180,6 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 	// we will begin the fight with a while function.
 	while(flag)
 	{
-		cout << endl;
 		cout << "\nThis is the Round " << round << " of the fight." << endl;
 
 		// we will check if it's hero's turn or enemy's turn.
@@ -195,13 +194,13 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 			
 			if ((- defensivePower + enemyToBattle.enemyAttackPower)>0){
 				healthPoint = healthPoint + defensivePower - enemyToBattle.enemyAttackPower;
-				cout << "\nYou have suffered " << - defensivePower + enemyToBattle.enemyAttackPower << " points of ATK from the enemy." << endl;
-				cout << "\nYour current HP is " << healthPoint << "." << endl;
+				cout << "You have suffered " << - defensivePower + enemyToBattle.enemyAttackPower << " points of ATK from the enemy." << endl;
+				cout << "Your current HP is " << healthPoint << "." << endl;
 			}
 
 			else{
-				cout << "\nYour defensivePower is so strong that you did not lose HP." << endl;
-				cout << "\nYour current HP is " << healthPoint << endl;
+				cout << "Your defensivePower is so strong that you did not lose HP." << endl;
+				cout << "Your current HP is " << healthPoint << endl;
 			}
 
 			// after this round, we will change the turn for the fight

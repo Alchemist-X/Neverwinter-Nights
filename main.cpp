@@ -28,7 +28,7 @@ int main()
 	{
 		ifstream fin("save.txt");
 		if (!fin)
-			saveExist = 0;
+			saveExist = 1;
 
 		cout << "\nWelcome to the world of Neverwinter Nights! \n"
 		"***   New Game   ***" << endl;
@@ -66,12 +66,10 @@ int main()
 				final(continueGame);
 		}
 
-		while (continueGame)
-		{
 
 			// we will read the hero's status from the save.txt file.
-			ifstream fin;
-			fin.open("save.txt");
+			ifstream kk;
+			kk.open("save.txt");
 			// in all save.txt, all the data have the following format：
 			// hero name:
 			// game level that the player in:
@@ -139,8 +137,16 @@ int main()
 			// we read the data from the file of hero's status
 			fin.close();
 
+		while (continueGame)
+		{
 			char toGo;
 			cout << "\nHi, " << heroName << endl;
+			cout << "Your current attributes are:\n"
+    		"HP: " << healthPoint << "\n"
+    		"ATK: " << attackPower << "\n"
+    		"DEF: " << defensivePower << "\n"
+    		"AGI: " << agility << "\n" << endl;
+
 			cout << "where do you want to go? \n"
 					"Enter I to go to Inn \n"
 					"Enter S to go to Shop \n"
@@ -170,6 +176,7 @@ int main()
 				break;
 			case 'Q':
 				Save(heroName,gameLevel,gold,healthPoint,attackPower,defensivePower,agility,race,equipment_1,equipment_2,equipment_3,potion_1,potion_2,potion_3,talent,max_HP);
+				gameLevel++;
 				break;
 			}
 		}
