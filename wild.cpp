@@ -113,7 +113,7 @@ void choiceInRound(int &choiceOfTheRound, Enemy &enemyToBattle, bool &flag, int 
 
 // we will build the fight scene here
 	
-bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold)	
+bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &agility, int &gold, int &gameLevel)	
 {
 	bool continueGame =1;
 	bool flag =1;
