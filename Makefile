@@ -1,8 +1,9 @@
+// using makefile to compile the project
 
-main : main.o wild.o scenes.o data_items.o data_characters.o save.o final.o initialization.o
+Neverwinter-Nights : main.o wild.o scenes.o data_items.o data_characters.o save.o initialization.o
 	g++ -pedantic-errors -std=c++11 $^ -o $@
 
-main.o : main.cpp wild.h scenes.h save.h initialization.h final.h hero.h
+main.o : main.cpp wild.h scenes.h save.h initialization.h hero.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
 wild.o : wild.cpp wild.h data_items.h data_characters.h hero.h
@@ -20,11 +21,6 @@ scenes.o : scenes.cpp scenes.h data_items.h hero.h
 save.o : save.cpp save.h hero.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
-final.o : final.cpp final.h hero.h
-	g++ -pedantic-errors -std=c++11 -c $<
-
 initialization.o : initialization.cpp initialization.h hero.h
 	g++ -pedantic-errors -std=c++11 -c $<
 
-clean:
-	rm -f *.o
