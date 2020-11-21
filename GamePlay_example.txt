@@ -1,0 +1,568 @@
+Last login: Sat Nov 21 23:47:53 on ttys001
+Aincrad@MacBook-Pro-2 Neverwinter-Nights-main % make
+g++ -pedantic-errors -std=c++11 -c main.cpp
+g++ -pedantic-errors -std=c++11 -c wild.cpp
+g++ -pedantic-errors -std=c++11 -c scenes.cpp
+g++ -pedantic-errors -std=c++11 -c data_items.cpp
+g++ -pedantic-errors -std=c++11 -c data_characters.cpp
+g++ -pedantic-errors -std=c++11 -c save.cpp
+g++ -pedantic-errors -std=c++11 -c initialization.cpp
+g++ -pedantic-errors -std=c++11 main.o wild.o scenes.o data_items.o data_characters.o save.o initialization.o -o Neverwinter-Nights
+Aincrad@MacBook-Pro-2 Neverwinter-Nights-main % ./Neverwinter-Nights
+
+Welcome to the world of Neverwinter Nights! 
+***   New Game   ***
+***   Load Game   ***
+***   Developers   *** 
+***   Quit Game   ***
+
+Enter 1 to play a new game 
+Enter 2 to continue playing 
+Enter 3 to check developers 
+Enter 4 to quit the game
+1
+
+Welcome to the world of Neverwinter Nights! Brave Adventurer! 
+In the game, you will be able to discover the hidden secret of a mysterious relic. 
+Along the adventure, you can beat various type of enemies, collect special items and enhace your properties. 
+*** ♪(´ε｀ ) *** 
+Please decide the name for your character, press Enter to finish ~
+kat
+Cool! kat ,A name of Warrior
+Now, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. 
+** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agility and health points ins equence. **
+
+You will be give 30 points in total
+Please enter the points that you want to distribute on attributes
+Please input four numbers, 1st stands for increase in attackPower, 2nd for defensivePower, 3rd for agility, 4th for healthPoint.
+30
+0
+0
+0
+Your current attributes are:
+HP: 100
+ATK: 60
+DEF: 25
+AGI: 20
+
+Your character can have different races, please choose one of the following 
+Enter H for Human 
+Enter D for Dwarf 
+Enter E for Elf 
+Enter G for Goblin
+D
+
+OK!, your race is Dwarf!
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+B
+
+You are now in a noisy and crowded bar, what would you like to do? 
+
+Enter 1 to have a cup of beer (cost 3 gold) 
+Enter 2 to chat with the owner 
+Enter 3 to listen to the travelling poet 
+Enter N to leave the Bar
+1
+It tastes nice, you murmur in a low voice 
+I got more important thing to do, rather than getting drunk here 
+
+
+You are now in a noisy and crowded bar, what would you like to do? 
+
+Enter 1 to have a cup of beer (cost 3 gold) 
+Enter 2 to chat with the owner 
+Enter 3 to listen to the travelling poet 
+Enter N to leave the Bar
+3
+
+...
+Now he was of the strength that he bare weapons well 
+Whatever he needed thereto, of this he had enow. With purpose he began to woo fair ladies 
+these bold Siegfried courted well in proper wise 
+Then bade Siegmund have cried to all his men, that he would hold a feasting with his loving kindred 
+The tidings thereof men brought into the lands of other kings 
+To the strangers and the home-folk he gave steeds and armor. Wheresoever any was found who, because of his birth, should become a knight 
+these noble youths were summoned to the land for the feasting 
+…… 
+It's late now 
+Let's continue the story of Siegfiled in another day
+
+
+You are now in a noisy and crowded bar, what would you like to do? 
+
+Enter 1 to have a cup of beer (cost 3 gold) 
+Enter 2 to chat with the owner 
+Enter 3 to listen to the travelling poet 
+Enter N to leave the Bar
+N
+you slam the door and leave the Bar
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+W
+
+You will chanllenge Orc this time.
+Your agility is 20.
+Your enemy's agility is 10.
+
+You will fight first.
+
+This is the Round 1 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+2
+
+Please enter the name of the potion name that you want to use.
+There are these potions in your package ('Empty' means no potion in the package): 
+Potion_1 : 
+Potion_2 : 
+Potion_3 : 
+Please enter 'Empty' if your package is empty as well. 
+Enpty
+
+This is the Round 2 of the fight.
+
+This is the enemy's turn of fight.
+Your defensivePower is so strong that you did not lose HP.
+Your current HP is 120
+
+This is the Round 3 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 60 point of ATK from you.
+Enemy's current HP is -30.
+
+Congratulations! You have won the battle.
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+S
+
+Welcome! Here you can see all the equipments
+As long as you pay a good price, i could provide you with whatever you want
+Would like to have a look?
+Enter Y to see the provided equipments, N to leave the Shop
+Y
+
+Sir, take a look at these handy equipments
+
+The equipments are listed below 
+ Knife *** gold:100 *** ATK+30 *** DEF+10 *** 
+ Sword *** gold:120 *** ATK+40 *** DEF+10 *** 
+Shield *** gold:130 *** ATK+10 *** DEF+30 *** 
+Armour *** gold:150 *** ATK+20 *** DEF+50 *** 
+  Tank *** gold:250 *** ATK+90 *** DEF+70 *** 
+Enter the exact name of equipments to buy it~
+Knife
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+B
+
+You are now in a noisy and crowded bar, what would you like to do? 
+
+Enter 1 to have a cup of beer (cost 3 gold) 
+Enter 2 to chat with the owner 
+Enter 3 to listen to the travelling poet 
+Enter N to leave the Bar
+3
+
+...
+Now he was of the strength that he bare weapons well 
+Whatever he needed thereto, of this he had enow. With purpose he began to woo fair ladies 
+these bold Siegfried courted well in proper wise 
+Then bade Siegmund have cried to all his men, that he would hold a feasting with his loving kindred 
+The tidings thereof men brought into the lands of other kings 
+To the strangers and the home-folk he gave steeds and armor. Wheresoever any was found who, because of his birth, should become a knight 
+these noble youths were summoned to the land for the feasting 
+…… 
+It's late now 
+Let's continue the story of Siegfiled in another day
+
+
+You are now in a noisy and crowded bar, what would you like to do? 
+
+Enter 1 to have a cup of beer (cost 3 gold) 
+Enter 2 to chat with the owner 
+Enter 3 to listen to the travelling poet 
+Enter N to leave the Bar
+N
+you slam the door and leave the Bar
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+W
+
+You will chanllenge Slime this time.
+Your agility is 20.
+Your enemy's agility is 5.
+
+You will fight first.
+
+This is the Round 1 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 50 point of ATK from you.
+Enemy's current HP is 40.
+
+This is the Round 2 of the fight.
+
+This is the enemy's turn of fight.
+Your defensivePower is so strong that you did not lose HP.
+Your current HP is 120
+
+This is the Round 3 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 50 point of ATK from you.
+Enemy's current HP is -10.
+
+Congratulations! You have won the battle.
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+W
+
+You will chanllenge FallenElf this time.
+Your agility is 20.
+Your enemy's agility is 70.
+
+Enemy will fight first.
+
+This is the Round 1 of the fight.
+
+This is the enemy's turn of fight.
+Your defensivePower is so strong that you did not lose HP.
+Your current HP is 120
+
+This is the Round 2 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 64 point of ATK from you.
+Enemy's current HP is -19.
+
+Congratulations! You have won the battle.
+
+Hi, 
+Your current attributes are:
+HP: 120
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+W
+
+You will chanllenge Riddler this time.
+Your agility is 20.
+Your enemy's agility is 10.
+
+You will fight first.
+
+This is the Round 1 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 45 point of ATK from you.
+Enemy's current HP is 55.
+
+This is the Round 2 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 5 points of ATK from the enemy.
+Your current HP is 115.
+
+This is the Round 3 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+3
+you decide to use skills
+You are using the Miss skill now.
+
+This is the Round 4 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 5 points of ATK from the enemy.
+Your current HP is 115.
+
+This is the Round 5 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 45 point of ATK from you.
+Enemy's current HP is 10.
+
+This is the Round 6 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 5 points of ATK from the enemy.
+Your current HP is 110.
+
+This is the Round 7 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 45 point of ATK from you.
+Enemy's current HP is -35.
+
+Congratulations! You have won the battle.
+
+Hi, 
+Your current attributes are:
+HP: 110
+ATK: 65
+DEF: 25
+AGI: 20
+
+where do you want to go? 
+Enter I to go to Inn 
+Enter S to go to Shop 
+Enter C to go to Church 
+Enter B to go to Bar 
+Enter W to go to wild and fight with enemy 
+Enter Q to save and return to menu
+W
+
+You will chanllenge Joker this time.
+Your agility is 20.
+Your enemy's agility is 40.
+
+Enemy will fight first.
+
+This is the Round 1 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 35 points of ATK from the enemy.
+Your current HP is 75.
+
+This is the Round 2 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 35 point of ATK from you.
+Enemy's current HP is 115.
+
+This is the Round 3 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 35 points of ATK from the enemy.
+Your current HP is 40.
+
+This is the Round 4 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 35 point of ATK from you.
+Enemy's current HP is 80.
+
+This is the Round 5 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 35 points of ATK from the enemy.
+Your current HP is 5.
+
+This is the Round 6 of the fight.
+
+Now it's your turn.
+
+Please input a number to indicate your choice.
+Enter 1 to give the enemy a common attack.
+Enter 2 to use your potion.
+Enter 3 to give the enemy a skill attack.
+Enter 4 to escape from the fight.
+1
+
+The enemy have suffered 35 point of ATK from you.
+Enemy's current HP is 45.
+
+This is the Round 7 of the fight.
+
+This is the enemy's turn of fight.
+You have suffered 35 points of ATK from the enemy.
+Your current HP is -30.
+
+Sorry, you lose the game, do better next time!
+
+Welcome to the world of Neverwinter Nights! 
+***   New Game   ***
+***   Load Game   ***
+***   Developers   *** 
+***   Quit Game   ***
+
+Enter 1 to play a new game 
+Enter 2 to continue playing 
+Enter 3 to check developers 
+Enter 4 to quit the game
+M
+
+Developer's shortcut 
+let's see the end of game ~ 
+
+
+Your blade inserts the chest of Thanos 
+It's ...... impossible!!! Thanos yell out 
+Within second, the giant creature falls dawn and turn into ashes immediately 
+In the ground, you suprisingly find the ... !!! 
+The condemned heart of fallen Lich !!!! 
+Congratulation! warrior, with this legendary item, you are now able to end the tragedy in the world of Neverwinter Nights 
+THE END
+Aincrad@MacBook-Pro-2 Neverwinter-Nights-main % 
