@@ -5,7 +5,7 @@
 using namespace std;
 
 
-void chooseDistribution(int totalPoints, int healthPoint, int attackPower, int defensivePower, int agility)
+void chooseDistribution(int &totalPoints, int &healthPoint, int &attackPower, int &defensivePower, int &agility)
 {
     int distribution_1,distribution_2,distribution_3,distribution_4;
     cin >> distribution_1 >> distribution_2 >> distribution_3 >> distribution_4;
@@ -25,6 +25,43 @@ void chooseDistribution(int totalPoints, int healthPoint, int attackPower, int d
 }
 
 
+void chooseRace(char decision)
+{
+    switch(decision)
+    {
+        case 'H':
+            race = "Human";
+            attackPower += 5;
+            defensivePower += 5;
+            break; 
+
+        case 'D':
+            race = "Dwarf";
+            attackPower += 5;
+            healthPoint += 20;
+            break;
+
+        case 'E':
+            race = "Elf";
+            attackPower += 15;
+            agility += 20;
+            defensivePower -= 5;
+            healthPoint += 30;
+            break;
+
+        case 'G':
+            race = "Goblin";
+            defensivePower += 5;
+            healthPoint += 20;
+            break;
+
+        default :
+            cout << "Invalid input! Please try again!" << endl;
+            cin >> decision;
+            chooseRace(decision);
+
+    } 
+}
 
 
 
@@ -65,27 +102,8 @@ void initialize()
     "Enter E for Elf \n"
     "Enter G for Goblin" << endl;
     cin >> decision;
-    switch(decision)
-    {
-        case 'H':
-            race = "Human";
-            attackPower += 5;
-            defensivePower += 5;
-        case 'D':
-            race = "Dwarf";
-            attackPower += 5;
-            healthPoint += 20;
-        case 'E':
-            race = "Elf";
-            attackPower += 15;
-            agility += 20;
-            defensivePower -= 5;
-            healthPoint += 30;
-        case 'G':
-            race = "Goblin";
-            defensivePower += 5;
-            healthPoint += 20;
-    } 
+    
+    chooseRace(decision);
 
     // there we want to know the max health point of the hero, and thus recover to this value in the inn.
     int max_HP = healthPoint;
