@@ -166,7 +166,7 @@ int main()
 				enterBar(healthPoint, attackPower, defensivePower, agility, gold);
 				break;
 			case 'W':
-				enterWild(healthPoint, attackPower, defensivePower, agility, gold);
+				enterWild(healthPoint, attackPower, defensivePower, agility, gold, gameLevel);
 				break;
 			case 'Q':
 				Save(heroName,gameLevel,gold,healthPoint,attackPower,defensivePower,agility,race,equipment_1,equipment_2,equipment_3,potion_1,potion_2,potion_3,talent,max_HP);
