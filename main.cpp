@@ -12,7 +12,6 @@
 #include "scenes.h"
 #include "save.h"
 #include "hero.h"
-#include "assistant_function.h"
 using namespace std;
 
 
@@ -95,23 +94,23 @@ int main()
 			getline(fin, l1);
 			heroName = l1;
 			getline(fin, l2);
-			istringstream is(l2);
-			is >> gameLevel;
+			istringstream is_1(l2);
+			is_1 >> gameLevel;
 			getline(fin, l3);
-			istringstream is(l3);
-			is >> gold;
+			istringstream is_2(l3);
+			is_2 >> gold;
 			getline(fin, l4);
-			istringstream is(l4);
-			is >> healthPoint;
+			istringstream is_3(l4);
+			is_3 >> healthPoint;
 			getline(fin, l5);
-			istringstream is(l5);
-			is >> attackPower;
+			istringstream is_4(l5);
+			is_4 >> attackPower;
 			getline(fin, l6);
-			istringstream is(l6);
-			is >> defensivePower;
+			istringstream is_5(l6);
+			is_5 >> defensivePower;
 			getline(fin, l7);
-			istringstream is(l7);
-			is >> agility;
+			istringstream is_6(l7);
+			is_6 >> agility;
 			getline(fin, l8);
 			race = l8;
 			getline(fin, l9);
@@ -129,8 +128,8 @@ int main()
 			getline(fin, l15);
 			talent = l15;
 			getline(fin, l16);
-			istringstream is(l16);
-			is >> max_HP;
+			istringstream is_7(l16);
+			is_7 >> max_HP;
 
 			// we read the data from the file of hero's status
 			fin.close();

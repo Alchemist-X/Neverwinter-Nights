@@ -5,7 +5,6 @@
 #include <ctime>
 #include <cmath>
 #include <cctype>
-#include "assistant_function.h"
 #include "wild.h"
 #include "hero.h"
 #include "data_items.h"
@@ -52,8 +51,10 @@ void isEscape(int escape)
 // this is the function related to the player's choices in the round.
 void choiceInRound(int choiceOfTheRound, Enemy enemyToBattle)
 {	
+	string choiceOfThePotion;
+	
 	switch (choiceOfTheRound)
-	{
+	{	
 		case 1:
 		// the player choose to give a common attack
 					
@@ -72,14 +73,13 @@ void choiceInRound(int choiceOfTheRound, Enemy enemyToBattle)
 		cout << "Potion_3 : " << potion_3 << endl;
 		cout << "Please enter 'Empty' if your package is empty as well. " << endl;
 
-		string choiceOfThePotion;
 		cin >> choiceOfThePotion;
 		potionPower(choiceOfThePotion);
 		break;
 
 		case 3:
 		// the player chooses to use the skills
-		skillPower();
+		skillPower(enemyToBattle);
 		break;
 
 		case 4:
@@ -92,7 +92,7 @@ void choiceInRound(int choiceOfTheRound, Enemy enemyToBattle)
 		// if the player enter a wrong number, we should let the player input another number.
 		cout << "Invalid input! Please try again." << endl;
 		cin >> choiceOfTheRound;
-		choiceInRound(choiceOfTheRound);
+		choiceInRound(choiceOfTheRound, enemyToBattle);
 
 	}
 }

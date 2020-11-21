@@ -1,36 +1,14 @@
 #include <iostream>
 #include "data_items.h"
 #include "hero.h"
+#include <string>
 #include <cstdlib>
 #include <cstring>
 #include <cctype>
 #include <string>
 using namespace std;
 
-//In this file, we decribe the functions 
 
-Equipment knife = {"knife", 100};
-// knife.equipmentName="Knife";
-// knife.equipmentValue=100;
-
-
-Equipment sword = {"sword", 120};
-// sword.equipmentName="Sword";
-// sword.equipmentValue=120;
-
-Equipment shield = {"shield", 130};
-// shield.equipmentName="Shield";
-// shield.equipmentValue=130;
-
-
-Equipment armour = {"armour", 150};
-// armour.equipmentName="Armour";
-// armour.equipmentValue=150;
-
-
-Equipment tank = {"tank", 250};
-// tank.equipmentName="Tank";
-// tank.equipmentValue=250;
 
 void equipmentPower(string equipmentName)
 {	
@@ -75,29 +53,6 @@ void equipmentPower(string equipmentName)
 	}
 }
 
-
-
-// we designed a few potions
-
-
-Potion blood = {"blood", 50};
-// boold.potionName="Blood";
-// boold.potionValue=50;
-
-
-Potion strength = {"strength", 40};
-// strength.potionName="Strength";
-// strength.potionValue=40;
-
-
-Potion hardness = {"hardness", 60};
-// hardness.potionName="Hardness";
-// hardness.potionValue=60;
-
-
-Potion randomenhance = {"randomenhance", 30};
-// randomenhance.potionName="RandomEnhance";
-// randomenhance.potionValue=30;
 
 
 

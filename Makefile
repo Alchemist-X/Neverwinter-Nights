@@ -1,3 +1,4 @@
+
 main : main.o wild.o scenes.o data_items.o data_characters.o save.o final.o initialization.o
 	g++ -pedantic-errors -std=c++11 $^ -o $@
 
@@ -24,3 +25,5 @@ final.o : final.cpp final.h hero.h
 
 initialization.o : initialization.cpp initialization.h hero.h
 	g++ -pedantic-errors -std=c++11 -c $<
+
+
