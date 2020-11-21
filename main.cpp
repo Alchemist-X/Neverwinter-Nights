@@ -140,7 +140,7 @@ int main()
 			fin.close();
 
 			char toGo;
-			cout << "Hi, " << heroName << endl;
+			cout << "\nHi, " << heroName << endl;
 			cout << "where do you want to go? \n"
 					"Enter I to go to Inn \n"
 					"Enter S to go to Shop \n"

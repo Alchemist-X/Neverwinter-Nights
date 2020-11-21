@@ -1,5 +1,3 @@
-// using makefile to compile the project
-
 Neverwinter-Nights : main.o wild.o scenes.o data_items.o data_characters.o save.o initialization.o
 	g++ -pedantic-errors -std=c++11 $^ -o $@
 

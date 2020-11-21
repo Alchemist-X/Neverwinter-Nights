@@ -87,14 +87,20 @@ void initialize()
 
     cin >> heroName;
     cout << "Cool! " << heroName << " , A name of Warrior" << endl;
-    cout << "Now, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. " << endl;
-    cout << "** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agility and health points ins equence. **" << endl;
-    cout << "You will be give 30 points in total" << endl;
-    cout << "Please enter the properties that you want to distribute" << endl;
-    cout << "Please input four numbers, 1st stands for increase in attackPower, 2nd for defensivePower, 3rd for agility, 4th for healthPoint." << endl;
+    cout << "\nNow, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. " << endl;
+    cout << "\n** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agility and health points ins equence. **" << endl;
+    cout << "\nYou will be give 30 points in total" << endl;
+    cout << "\nPlease enter the points that you want to distribute on attributes" << endl;
+    cout << "\nPlease input four numbers, 1st stands for increase in attackPower, 2nd for defensivePower, 3rd for agility, 4th for healthPoint." << endl;
     
     
     chooseDistribution(totalPoints, healthPoint, attackPower, defensivePower, agility);
+    cout << "Your current attributes are:\n"
+    "HP: " << healthPoint << "\n"
+    "ATK: " << attackPower << "\n"
+    "DEF: " << defensivePower << "\n"
+    "AGI: " << agility << "\n" << endl;
+
 
 
     cout << "Your character can have different races, please choose one of the following \n"
@@ -105,7 +111,7 @@ void initialize()
     cin >> decision;
     
     chooseRace(decision);
-    cout << "\n OK!, your race is " << race << "!" << endl;
+    cout << "\nOK!, your race is " << race << "!" << endl;
 
     // there we want to know the max health point of the hero, and thus recover to this value in the inn.
     int max_HP = healthPoint;
@@ -129,9 +135,9 @@ void initialize()
     fout << "Empty" << endl;
     fout << "Empty" << endl;
     fout << "Empty" << endl;
-    fout << "Empty" << endl;
-    fout << "blood" << endl;
     fout << "strength" << endl;
+    fout << "blood" << endl;
+    fout << "Empty" << endl;
     fout << "Empty" << endl;
     fout << "Empty" << endl;
     fout << max_HP << endl;

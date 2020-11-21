@@ -152,8 +152,8 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 	}
 	
 
-	cout << "You will chanllenge " << enemyToBattle.enemyName << " this time. \n" << endl;
-	cout << "Your agility is " << agility << ".\n" << endl;
+	cout << "\nYou will chanllenge " << enemyToBattle.enemyName << " this time." << endl;
+	cout << "Your agility is " << agility << "." << endl;
 	cout << "Your enemy's agility is " << enemyToBattle.enemyAgility << "." << endl;
 
 	// compare the agility of the hero and enemy, to determine whether the hero or the enemy fight first.
@@ -181,7 +181,7 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 	while(flag)
 	{
 		cout << endl;
-		cout << "This is the Round " << round << " of the fight." << endl;
+		cout << "\nThis is the Round " << round << " of the fight." << endl;
 
 		// we will check if it's hero's turn or enemy's turn.
 				
@@ -195,13 +195,13 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 			
 			if ((- defensivePower + enemyToBattle.enemyAttackPower)>0){
 				healthPoint = healthPoint + defensivePower - enemyToBattle.enemyAttackPower;
-				cout << "\n You have suffered " << - defensivePower + enemyToBattle.enemyAttackPower << " points of ATK from the enemy." << endl;
-				cout << "\n Your current HP is " << healthPoint << "." << endl;
+				cout << "\nYou have suffered " << - defensivePower + enemyToBattle.enemyAttackPower << " points of ATK from the enemy." << endl;
+				cout << "\nYour current HP is " << healthPoint << "." << endl;
 			}
 
 			else{
-				cout << "\n Your defensivePower is so strong that you did not lose HP." << endl;
-				cout << "\n Your current HP is " << healthPoint << endl;
+				cout << "\nYour defensivePower is so strong that you did not lose HP." << endl;
+				cout << "\nYour current HP is " << healthPoint << endl;
 			}
 
 			// after this round, we will change the turn for the fight
@@ -213,7 +213,7 @@ bool enterWild( int &healthPoint, int &attackPower, int &defensivePower, int &ag
 		else
 		// now it's hero's turn
 		{
-			cout << "\n Now it's your turn.\n" << endl;
+			cout << "\nNow it's your turn.\n" << endl;
 			cout << "Please input a number to indicate your choice." << endl;
 			cout << "Enter 1 to give the enemy a common attack." << endl;
 			cout << "Enter 2 to use your potion." << endl;

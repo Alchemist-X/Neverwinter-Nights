@@ -74,7 +74,7 @@ void enterInn(int &healthPoint, int &gold)
         break;
 
     case 'N':
-        cout << "you slam the door and leave the Inn";
+        cout << "you slam the door and leave the Inn\n" << endl;
         break;
 
     default:
@@ -178,6 +178,7 @@ void enterChurch(int &healthPoint, int &attackPower, int &defensivePower, int &a
             healthPoint += 20;
             break;
         }
+        cout << "\nYou have successfully enhaced your attributes!" << endl;
         break;
     case '2':
         cout << "\nWhat kind of skill would you like to learn?\n"
@@ -226,7 +227,7 @@ void enterBar(int &healthPoint, int &attackPower, int &defensivePower, int &agil
         beer_count++;
         cout << "I got more important thing to do, rather than getting drunk here \n"
              << endl;
-        if(bear_count = 3)
+        if(beer_count == 3)
             attackPower = attackPower +30;
         enterBar(healthPoint, attackPower, defensivePower, agility, gold);
         break;
