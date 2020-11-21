@@ -77,15 +77,16 @@ void initialize()
     agility = 20;
     gold = 100;
     gameLevel = 1;
+    max_HP = 150;
 
-    cout << "Welcome to the world of Neverwinter Nights! Brave Adventurer! \n"
+    cout << "\nWelcome to the world of Neverwinter Nights! Brave Adventurer! \n"
     "In the game, you will be able to discover the hidden secret of a mysterious relic. \n"
-    "Along the adventure, you can beat various type of enemies, collect distinguised items and enhace your properties. \n"
+    "Along the adventure, you can beat various type of enemies, collect special items and enhace your properties. \n"
     "*** ♪(´ε｀ ) *** \n"
-    "Please decide the name for your character, press Enter to finish~" << endl;
+    "Please decide the name for your character, press Enter to finish ~" << endl;
 
     cin >> heroName;
-    cout << "Cool! " << heroName << ", A name of Warrior" << endl;
+    cout << "Cool! " << heroName << " , A name of Warrior" << endl;
     cout << "Now, it's time to distribute points through attackPower,defensivePower,agility and healthPoint. " << endl;
     cout << "** Hint: attackPower,defensivePower,agility and healthPoint stands for attack,defensivePowerence,agility and health points ins equence. **" << endl;
     cout << "You will be give 30 points in total" << endl;
@@ -104,6 +105,7 @@ void initialize()
     cin >> decision;
     
     chooseRace(decision);
+    cout << "\n OK!, your race is " << race << "!" << endl;
 
     // there we want to know the max health point of the hero, and thus recover to this value in the inn.
     int max_HP = healthPoint;
@@ -128,8 +130,8 @@ void initialize()
     fout << "Empty" << endl;
     fout << "Empty" << endl;
     fout << "Empty" << endl;
-    fout << "Empty" << endl;
-    fout << "Empty" << endl;
+    fout << "blood" << endl;
+    fout << "strength" << endl;
     fout << "Empty" << endl;
     fout << "Empty" << endl;
     fout << max_HP << endl;
